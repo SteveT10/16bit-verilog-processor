@@ -1,0 +1,334 @@
+# Reading pref.tcl
+# OpenFile C:/Users/steve/OneDrive/Documents/GitHub/TCES330_Project/TCES330_Project/Datapath/ALU.sv
+do runALU.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:11:35 on May 18,2023
+# vlog -reportprogress 300 ./ALU.sv 
+# -- Compiling module ALU
+# ** Error: (vlog-13069) ./ALU.sv(12): near "input": syntax error, unexpected input, expecting ';'.
+# ** Error (suppressible): ./ALU.sv(20): (vlog-13299) Undefined variable: 'A'.
+# ** Error (suppressible): ./ALU.sv(20): (vlog-13299) Undefined variable: 'B'.
+# ** Error (suppressible): ./ALU.sv(21): (vlog-13299) Undefined variable: 'A'.
+# ** Error (suppressible): ./ALU.sv(21): (vlog-13299) Undefined variable: 'B'.
+# ** Error (suppressible): ./ALU.sv(22): (vlog-13299) Undefined variable: 'A'.
+# ** Error (suppressible): ./ALU.sv(23): (vlog-13299) Undefined variable: 'A'.
+# ** Error (suppressible): ./ALU.sv(23): (vlog-13299) Undefined variable: 'B'.
+# ** Error (suppressible): ./ALU.sv(24): (vlog-13299) Undefined variable: 'A'.
+# ** Error (suppressible): ./ALU.sv(24): (vlog-13299) Undefined variable: 'B'.
+# ** Error (suppressible): ./ALU.sv(25): (vlog-13299) Undefined variable: 'A'.
+# ** Error (suppressible): ./ALU.sv(25): (vlog-13299) Undefined variable: 'B'.
+# ** Error (suppressible): ./ALU.sv(26): (vlog-13299) Undefined variable: 'A'.
+# ** Error: ./ALU.sv(9): (vlog-2730) Undefined variable: 'A'.
+# ** Error: ./ALU.sv(9): (vlog-13294) Identifier must be declared with a port mode: A.
+# ** Error: ./ALU.sv(9): (vlog-2730) Undefined variable: 'B'.
+# ** Error: ./ALU.sv(9): (vlog-13294) Identifier must be declared with a port mode: B.
+# -- Compiling module ALU_tb
+# ** Error: ./ALU.sv(41): (vlog-2730) Undefined variable: 'Sel'.
+# ** Error: ./ALU.sv(46): (vlog-2730) Undefined variable: 'Sel'.
+# End time: 15:11:36 on May 18,2023, Elapsed time: 0:00:01
+# Errors: 19, Warnings: 0
+# ** Error: C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runALU.do line 7
+# C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./ALU.sv""
+do runALU.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:12:01 on May 18,2023
+# vlog -reportprogress 300 ./ALU.sv 
+# -- Compiling module ALU
+# ** Error: (vlog-13069) ./ALU.sv(12): near "input": syntax error, unexpected input, expecting ';'.
+# ** Error (suppressible): ./ALU.sv(20): (vlog-13299) Undefined variable: 'A'.
+# ** Error (suppressible): ./ALU.sv(20): (vlog-13299) Undefined variable: 'B'.
+# ** Error (suppressible): ./ALU.sv(21): (vlog-13299) Undefined variable: 'A'.
+# ** Error (suppressible): ./ALU.sv(21): (vlog-13299) Undefined variable: 'B'.
+# ** Error (suppressible): ./ALU.sv(22): (vlog-13299) Undefined variable: 'A'.
+# ** Error (suppressible): ./ALU.sv(23): (vlog-13299) Undefined variable: 'A'.
+# ** Error (suppressible): ./ALU.sv(23): (vlog-13299) Undefined variable: 'B'.
+# ** Error (suppressible): ./ALU.sv(24): (vlog-13299) Undefined variable: 'A'.
+# ** Error (suppressible): ./ALU.sv(24): (vlog-13299) Undefined variable: 'B'.
+# ** Error (suppressible): ./ALU.sv(25): (vlog-13299) Undefined variable: 'A'.
+# ** Error (suppressible): ./ALU.sv(25): (vlog-13299) Undefined variable: 'B'.
+# ** Error (suppressible): ./ALU.sv(26): (vlog-13299) Undefined variable: 'A'.
+# ** Error: ./ALU.sv(9): (vlog-2730) Undefined variable: 'A'.
+# ** Error: ./ALU.sv(9): (vlog-13294) Identifier must be declared with a port mode: A.
+# ** Error: ./ALU.sv(9): (vlog-2730) Undefined variable: 'B'.
+# ** Error: ./ALU.sv(9): (vlog-13294) Identifier must be declared with a port mode: B.
+# -- Compiling module ALU_tb
+# End time: 15:12:01 on May 18,2023, Elapsed time: 0:00:00
+# Errors: 17, Warnings: 0
+# ** Error: C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runALU.do line 7
+# C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./ALU.sv""
+do runALU.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:12:37 on May 18,2023
+# vlog -reportprogress 300 ./ALU.sv 
+# -- Compiling module ALU
+# -- Compiling module ALU_tb
+# 
+# Top level modules:
+# 	ALU_tb
+# End time: 15:12:38 on May 18,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work ALU_tb 
+# Start time: 15:12:38 on May 18,2023
+# Loading sv_std.std
+# Loading work.ALU_tb
+# Loading work.ALU
+# ** Error: (vsim-3043) Unresolved reference to 'Sel'.
+#    Time: 0 ps  Iteration: 0  Instance: /ALU_tb File: ./ALU.sv Line: 51
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./runALU.do PAUSED at line 12
+do runALU.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:13:05 on May 18,2023
+# vlog -reportprogress 300 ./ALU.sv 
+# -- Compiling module ALU
+# -- Compiling module ALU_tb
+# 
+# Top level modules:
+# 	ALU_tb
+# End time: 15:13:05 on May 18,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work ALU_tb 
+# Start time: 15:12:38 on May 18,2023
+# Loading sv_std.std
+# Loading work.ALU_tb
+# Loading work.ALU
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Sel = 0 	 A = 0000000000000101 	 B = 0000000000000010 	 Q = 0000000000000000
+# Sel = 1 	 A = 0000000000000101 	 B = 0000000000000010 	 Q = 0000000000000000
+# Sel = 2 	 A = 0000000000000101 	 B = 0000000000000010 	 Q = 0000000000000000
+# Sel = 3 	 A = 0000000000000101 	 B = 0000000000000010 	 Q = 0000000000000000
+# Sel = 4 	 A = 0000000000000101 	 B = 0000000000000010 	 Q = 0000000000000000
+# Sel = 5 	 A = 0000000000000101 	 B = 0000000000000010 	 Q = 0000000000000000
+# Sel = 6 	 A = 0000000000000101 	 B = 0000000000000010 	 Q = 0000000000000000
+# Sel = 7 	 A = 0000000000000101 	 B = 0000000000000010 	 Q = 0000000000000000
+# Sel = 0 	 A = 0001001000010101 	 B = 0011010100100100 	 Q = 0000000000000000
+# Sel = 7 	 A = 1100000010001001 	 B = 0101111010000001 	 Q = 1100000010001010
+# Sel = 7 	 A = 1000010010000100 	 B = 1101011000001001 	 Q = 1000010010000101
+# Sel = 7 	 A = 1011000111110000 	 B = 0101011001100011 	 Q = 1011000111110001
+# Sel = 0 	 A = 0000011010111001 	 B = 0111101100001101 	 Q = 0000000000000000
+# Sel = 0 	 A = 0100011011011111 	 B = 1001100110001101 	 Q = 0000000000000000
+# Sel = 7 	 A = 1011001011000010 	 B = 1000010001100101 	 Q = 1011001011000011
+# Sel = 7 	 A = 1000100100110111 	 B = 0101001000010010 	 Q = 1000100100111000
+# Sel = 0 	 A = 0000000011110011 	 B = 1110001100000001 	 Q = 0000000000000000
+# Sel = 0 	 A = 0000011011010111 	 B = 1100110100001101 	 Q = 0000000000000000
+do runALU.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:16:35 on May 18,2023
+# vlog -reportprogress 300 ./ALU.sv 
+# -- Compiling module ALU
+# -- Compiling module ALU_tb
+# 
+# Top level modules:
+# 	ALU_tb
+# End time: 15:16:35 on May 18,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 15:16:36 on May 18,2023, Elapsed time: 0:03:58
+# Errors: 1, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work ALU_tb 
+# Start time: 15:16:36 on May 18,2023
+# Loading sv_std.std
+# Loading work.ALU_tb
+# Loading work.ALU
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Sel = 0 	 A = 0000000000000101 	 B = 0000000000000010 	 Q = 0000000000000000
+# Sel = 1 	 A = 0000000000000101 	 B = 0000000000000010 	 Q = 0000000000000111
+# Sel = 2 	 A = 0000000000000101 	 B = 0000000000000010 	 Q = 0000000000000011
+# Sel = 3 	 A = 0000000000000101 	 B = 0000000000000010 	 Q = 0000000000000101
+# Sel = 4 	 A = 0000000000000101 	 B = 0000000000000010 	 Q = 0000000000000111
+# Sel = 5 	 A = 0000000000000101 	 B = 0000000000000010 	 Q = 0000000000000111
+# Sel = 6 	 A = 0000000000000101 	 B = 0000000000000010 	 Q = 0000000000000000
+# Sel = 7 	 A = 0000000000000101 	 B = 0000000000000010 	 Q = 0000000000000110
+# Sel = 0 	 A = 0001001000010101 	 B = 0011010100100100 	 Q = 0000000000000000
+# Sel = 7 	 A = 1100000010001001 	 B = 0101111010000001 	 Q = 1100000010001010
+# Sel = 7 	 A = 1000010010000100 	 B = 1101011000001001 	 Q = 1000010010000101
+# Sel = 7 	 A = 1011000111110000 	 B = 0101011001100011 	 Q = 1011000111110001
+# Sel = 0 	 A = 0000011010111001 	 B = 0111101100001101 	 Q = 0000000000000000
+# Sel = 0 	 A = 0100011011011111 	 B = 1001100110001101 	 Q = 0000000000000000
+# Sel = 7 	 A = 1011001011000010 	 B = 1000010001100101 	 Q = 1011001011000011
+# Sel = 7 	 A = 1000100100110111 	 B = 0101001000010010 	 Q = 1000100100111000
+# Sel = 0 	 A = 0000000011110011 	 B = 1110001100000001 	 Q = 0000000000000000
+# Sel = 0 	 A = 0000011011010111 	 B = 1100110100001101 	 Q = 0000000000000000
+do runALU.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:20:41 on May 18,2023
+# vlog -reportprogress 300 ./ALU.sv 
+# -- Compiling module ALU
+# -- Compiling module ALU_tb
+# 
+# Top level modules:
+# 	ALU_tb
+# End time: 15:20:41 on May 18,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 15:20:42 on May 18,2023, Elapsed time: 0:04:06
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work ALU_tb 
+# Start time: 15:20:42 on May 18,2023
+# Loading sv_std.std
+# Loading work.ALU_tb
+# Loading work.ALU
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Sel = 0 	 A = 0101010101010101 	 B = 1010101010101010 	 Q = 0000000000000000
+# Sel = 1 	 A = 0101010101010101 	 B = 1010101010101010 	 Q = 1111111111111111
+# Sel = 2 	 A = 0101010101010101 	 B = 1010101010101010 	 Q = 1010101010101011
+# Sel = 3 	 A = 0101010101010101 	 B = 1010101010101010 	 Q = 0101010101010101
+# Sel = 4 	 A = 0101010101010101 	 B = 1010101010101010 	 Q = 1111111111111111
+# Sel = 5 	 A = 0101010101010101 	 B = 1010101010101010 	 Q = 1111111111111111
+# Sel = 6 	 A = 0101010101010101 	 B = 1010101010101010 	 Q = 0000000000000000
+# Sel = 7 	 A = 0101010101010101 	 B = 1010101010101010 	 Q = 0101010101010110
+# Sel = 0 	 A = 0001001000010101 	 B = 0011010100100100 	 Q = 0000000000000000
+# Sel = 7 	 A = 1100000010001001 	 B = 0101111010000001 	 Q = 1100000010001010
+# Sel = 7 	 A = 1000010010000100 	 B = 1101011000001001 	 Q = 1000010010000101
+# Sel = 7 	 A = 1011000111110000 	 B = 0101011001100011 	 Q = 1011000111110001
+# Sel = 0 	 A = 0000011010111001 	 B = 0111101100001101 	 Q = 0000000000000000
+# Sel = 0 	 A = 0100011011011111 	 B = 1001100110001101 	 Q = 0000000000000000
+# Sel = 7 	 A = 1011001011000010 	 B = 1000010001100101 	 Q = 1011001011000011
+# Sel = 7 	 A = 1000100100110111 	 B = 0101001000010010 	 Q = 1000100100111000
+# Sel = 0 	 A = 0000000011110011 	 B = 1110001100000001 	 Q = 0000000000000000
+# Sel = 0 	 A = 0000011011010111 	 B = 1100110100001101 	 Q = 0000000000000000
+do runALU.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:24:09 on May 18,2023
+# vlog -reportprogress 300 ./ALU.sv 
+# -- Compiling module ALU
+# -- Compiling module ALU_tb
+# 
+# Top level modules:
+# 	ALU_tb
+# End time: 15:24:10 on May 18,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 15:24:11 on May 18,2023, Elapsed time: 0:03:29
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work ALU_tb 
+# Start time: 15:24:11 on May 18,2023
+# Loading sv_std.std
+# Loading work.ALU_tb
+# Loading work.ALU
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Sel = 0 	 A = 0101010101010101 	 B = 1010101010101001 	 Q = 0000000000000000
+# Sel = 1 	 A = 0101010101010101 	 B = 1010101010101001 	 Q = 1111111111111110
+# Sel = 2 	 A = 0101010101010101 	 B = 1010101010101001 	 Q = 1010101010101100
+# Sel = 3 	 A = 0101010101010101 	 B = 1010101010101001 	 Q = 0101010101010101
+# Sel = 4 	 A = 0101010101010101 	 B = 1010101010101001 	 Q = 1111111111111100
+# Sel = 5 	 A = 0101010101010101 	 B = 1010101010101001 	 Q = 1111111111111101
+# Sel = 6 	 A = 0101010101010101 	 B = 1010101010101001 	 Q = 0000000000000001
+# Sel = 7 	 A = 0101010101010101 	 B = 1010101010101001 	 Q = 0101010101010110
+# Sel = 0 	 A = 0001001000010101 	 B = 0011010100100100 	 Q = 0000000000000000
+# Sel = 7 	 A = 1100000010001001 	 B = 0101111010000001 	 Q = 1100000010001010
+# Sel = 7 	 A = 1000010010000100 	 B = 1101011000001001 	 Q = 1000010010000101
+# Sel = 7 	 A = 1011000111110000 	 B = 0101011001100011 	 Q = 1011000111110001
+# Sel = 0 	 A = 0000011010111001 	 B = 0111101100001101 	 Q = 0000000000000000
+# Sel = 0 	 A = 0100011011011111 	 B = 1001100110001101 	 Q = 0000000000000000
+# Sel = 7 	 A = 1011001011000010 	 B = 1000010001100101 	 Q = 1011001011000011
+# Sel = 7 	 A = 1000100100110111 	 B = 0101001000010010 	 Q = 1000100100111000
+# Sel = 0 	 A = 0000000011110011 	 B = 1110001100000001 	 Q = 0000000000000000
+# Sel = 0 	 A = 0000011011010111 	 B = 1100110100001101 	 Q = 0000000000000000
+do runALU.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:25:06 on May 18,2023
+# vlog -reportprogress 300 ./ALU.sv 
+# -- Compiling module ALU
+# -- Compiling module ALU_tb
+# 
+# Top level modules:
+# 	ALU_tb
+# End time: 15:25:06 on May 18,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 15:25:07 on May 18,2023, Elapsed time: 0:00:56
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work ALU_tb 
+# Start time: 15:25:07 on May 18,2023
+# Loading sv_std.std
+# Loading work.ALU_tb
+# Loading work.ALU
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Sel = 0 	 A = 0101010101010101 	 B = 1010101010101001 	 Q = 0000000000000000
+# Sel = 1 	 A = 0101010101010101 	 B = 1010101010101001 	 Q = 1111111111111110
+# Sel = 2 	 A = 0101010101010101 	 B = 1010101010101001 	 Q = 1010101010101100
+# Sel = 3 	 A = 0101010101010101 	 B = 1010101010101001 	 Q = 0101010101010101
+# Sel = 4 	 A = 0101010101010101 	 B = 1010101010101001 	 Q = 1111111111111100
+# Sel = 5 	 A = 0101010101010101 	 B = 1010101010101001 	 Q = 1111111111111101
+# Sel = 6 	 A = 0101010101010101 	 B = 1010101010101001 	 Q = 0000000000000001
+# Sel = 7 	 A = 0101010101010101 	 B = 1010101010101001 	 Q = 0101010101010110
+# Sel = 0 	 A = 0001001000010101 	 B = 0011010100100100 	 Q = 0000000000000000
+# Sel = 7 	 A = 1100000010001001 	 B = 0101111010000001 	 Q = 1100000010001010
+# Sel = 7 	 A = 1000010010000100 	 B = 1101011000001001 	 Q = 1000010010000101
+# Sel = 7 	 A = 1011000111110000 	 B = 0101011001100011 	 Q = 1011000111110001
+# Sel = 0 	 A = 0000011010111001 	 B = 0111101100001101 	 Q = 0000000000000000
+# Sel = 0 	 A = 0100011011011111 	 B = 1001100110001101 	 Q = 0000000000000000
+# Sel = 7 	 A = 1011001011000010 	 B = 1000010001100101 	 Q = 1011001011000011
+# Sel = 7 	 A = 1000100100110111 	 B = 0101001000010010 	 Q = 1000100100111000
+# Sel = 0 	 A = 0000000011110011 	 B = 1110001100000001 	 Q = 0000000000000000
+# Sel = 0 	 A = 0000011011010111 	 B = 1100110100001101 	 Q = 0000000000000000
+# Sel = 0 	 A = 0011101100100011 	 B = 1111000101110110 	 Q = 0000000000000000
+# Sel = 0 	 A = 0001111010001101 	 B = 1100110100111101 	 Q = 0000000000000000
+# Sel = 0 	 A = 0111011011010100 	 B = 0101011111101101 	 Q = 0000000000000000
+# Sel = 0 	 A = 0100011000101101 	 B = 1111011110001100 	 Q = 0000000000000000
+# Sel = 0 	 A = 0111110011111101 	 B = 1110100111111001 	 Q = 0000000000000000
+do runALU.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:26:05 on May 18,2023
+# vlog -reportprogress 300 ./ALU.sv 
+# -- Compiling module ALU
+# -- Compiling module ALU_tb
+# 
+# Top level modules:
+# 	ALU_tb
+# End time: 15:26:05 on May 18,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 15:26:06 on May 18,2023, Elapsed time: 0:00:59
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work ALU_tb 
+# Start time: 15:26:06 on May 18,2023
+# Loading sv_std.std
+# Loading work.ALU_tb
+# Loading work.ALU
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Sel = 0 	 A = 0101010101010101 	 B = 1010101010101001 	 Q = 0000000000000000
+# Sel = 1 	 A = 0101010101010101 	 B = 1010101010101001 	 Q = 1111111111111110
+# Sel = 2 	 A = 0101010101010101 	 B = 1010101010101001 	 Q = 1010101010101100
+# Sel = 3 	 A = 0101010101010101 	 B = 1010101010101001 	 Q = 0101010101010101
+# Sel = 4 	 A = 0101010101010101 	 B = 1010101010101001 	 Q = 1111111111111100
+# Sel = 5 	 A = 0101010101010101 	 B = 1010101010101001 	 Q = 1111111111111101
+# Sel = 6 	 A = 0101010101010101 	 B = 1010101010101001 	 Q = 0000000000000001
+# Sel = 7 	 A = 0101010101010101 	 B = 1010101010101001 	 Q = 0101010101010110
+# Sel = 1 	 A = 0001001000010101 	 B = 0011010100100100 	 Q = 0100011100111001
+# Sel = 3 	 A = 1000010010000100 	 B = 1101011000001001 	 Q = 1000010010000100
+# Sel = 5 	 A = 0000011010111001 	 B = 0111101100001101 	 Q = 0111111110111101
+# Sel = 2 	 A = 1011001011000010 	 B = 1000010001100101 	 Q = 0010111001011101
+# Sel = 5 	 A = 0000000011110011 	 B = 1110001100000001 	 Q = 1110001111110011
+# Sel = 5 	 A = 0011101100100011 	 B = 1111000101110110 	 Q = 1111101101110111
+# Sel = 4 	 A = 0111011011010100 	 B = 0101011111101101 	 Q = 0010000100111001
+# Sel = 6 	 A = 0111110011111101 	 B = 1110100111111001 	 Q = 0110100011111001
+# Sel = 2 	 A = 1110001011110111 	 B = 1000010011000101 	 Q = 0101111000110010
+# Sel = 7 	 A = 0111001010101111 	 B = 1111011111100101 	 Q = 0111001010110000
+quit -sim
+# End time: 15:26:52 on May 18,2023, Elapsed time: 0:00:46
+# Errors: 0, Warnings: 0
