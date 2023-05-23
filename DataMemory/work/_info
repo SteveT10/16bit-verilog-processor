@@ -1,0 +1,61 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/ea-co/OneDrive - Cooperlan/Intel Quartus Projects/TCES330_Project/DataMemory
+vDataMemory
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z2 !s110 1684879739
+!i10b 1
+!s100 WG6HjjYZ2bB1@Tb91Dm9m3
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IW[n2ELb5g;SeQlozD1;0J2
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+Z5 w1684879736
+Z6 8./DataMemory.sv
+Z7 F./DataMemory.sv
+!i122 12
+L0 1 18
+Z8 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z9 !s108 1684879739.000000
+!s107 ./DataMemory.sv|
+Z10 !s90 -reportprogress|300|./DataMemory.sv|
+!i113 1
+Z11 tCvgOpt 0
+n@data@memory
+vDataMemory_tb
+R1
+R2
+!i10b 1
+!s100 NF?bAP2OOlC1DM2dgXaf@1
+R3
+IUkCY3gCmGlUg``O_:?mLX3
+R4
+S1
+R0
+R5
+R6
+R7
+!i122 12
+L0 20 43
+R8
+r1
+!s85 0
+31
+R9
+Z12 !s107 ./DataMemory.sv|
+R10
+!i113 1
+R11
+n@data@memory_tb
