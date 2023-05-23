@@ -43,11 +43,12 @@ module ALU_tb;
 		end
 
 		for(int j = 0; j < 10; j++) begin
-			{SelectFunc, A, B} = $random;
+			{A, B} = $random;
+			SelectFunc = $random;
 			#10;
 		end
 	end
 	initial
-	$monitor( "Sel = %d \t A = %b \t B = %b \t Q = %b", SelectFunc, A, B, Q);
+	$monitor( "Sel = %d \t A = %h \t B = %h \t Q = %h", SelectFunc, A, B, Q);
 endmodule
 	
