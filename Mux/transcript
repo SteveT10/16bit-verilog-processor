@@ -1,0 +1,45 @@
+# Reading pref.tcl
+# OpenFile C:/Users/steve/OneDrive/Documents/GitHub/TCES330_Project/TCES330_Project/Mux/Mux_16w_2to1.sv
+do runMux.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:00:36 on May 30,2023
+# vlog -reportprogress 300 ./Mux_16w_2to1.sv 
+# -- Compiling module Mux_16w_2to1
+# -- Compiling module Mux_16w_2to1_tb
+# 
+# Top level modules:
+# 	Mux_16w_2to1_tb
+# End time: 11:00:36 on May 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work Mux_16w_2to1_tb 
+# Start time: 11:00:36 on May 30,2023
+# Loading sv_std.std
+# Loading work.Mux_16w_2to1_tb
+# Loading work.Mux_16w_2to1
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# PASSED: Sel = 0 	 A = 1215 	 B = 3524 	 M = 3524
+# PASSED: Sel = 1 	 A = c089 	 B = 5e81 	 M = c089
+# PASSED: Sel = 1 	 A = 8484 	 B = d609 	 M = 8484
+# PASSED: Sel = 1 	 A = b1f0 	 B = 5663 	 M = b1f0
+# PASSED: Sel = 0 	 A = 06b9 	 B = 7b0d 	 M = 7b0d
+# PASSED: Sel = 0 	 A = 46df 	 B = 998d 	 M = 998d
+# PASSED: Sel = 1 	 A = b2c2 	 B = 8465 	 M = b2c2
+# PASSED: Sel = 1 	 A = 8937 	 B = 5212 	 M = 8937
+# PASSED: Sel = 0 	 A = 00f3 	 B = e301 	 M = e301
+# PASSED: Sel = 0 	 A = 06d7 	 B = cd0d 	 M = cd0d
+# PASSED: Sel = 0 	 A = 3b23 	 B = f176 	 M = f176
+# PASSED: Sel = 0 	 A = 1e8d 	 B = cd3d 	 M = cd3d
+# PASSED: Sel = 0 	 A = 76d4 	 B = 57ed 	 M = 57ed
+# PASSED: Sel = 0 	 A = 462d 	 B = f78c 	 M = f78c
+# PASSED: Sel = 0 	 A = 7cfd 	 B = e9f9 	 M = e9f9
+# PASSED: Sel = 1 	 A = e337 	 B = 24c6 	 M = e337
+# PASSED: Sel = 1 	 A = e2f7 	 B = 84c5 	 M = e2f7
+# PASSED: Sel = 1 	 A = d513 	 B = d2aa 	 M = d513
+# PASSED: Sel = 0 	 A = 72af 	 B = f7e5 	 M = f7e5
+# PASSED: Sel = 1 	 A = bbd2 	 B = 7277 	 M = bbd2
+quit -sim
+# End time: 11:01:11 on May 30,2023, Elapsed time: 0:00:35
+# Errors: 0, Warnings: 0

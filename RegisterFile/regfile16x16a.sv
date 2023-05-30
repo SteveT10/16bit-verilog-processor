@@ -1,4 +1,4 @@
-module regfile8x16a
+module regfile16x16a
 	(input clk,
 	 input write,
 	 input [3:0] wrAddr,
@@ -20,13 +20,13 @@ module regfile8x16a
 
 endmodule
 
-module regfile8x16a_tb;
+module regfile16x16a_tb;
 
 	logic clk, write;
 	logic [3:0] wrAddr, rdAddrA, rdAddrB;
 	logic [15:0] wrData, rdDataA, rdDataB;
 
-	regfile8x16a DUT(clk, write, wrAddr, wrData, rdAddrA, rdDataA, rdAddrB, rdDataB);
+	regfile16x16a DUT(clk, write, wrAddr, wrData, rdAddrA, rdDataA, rdAddrB, rdDataB);
 	
 	always begin
 		clk = 0;
@@ -48,6 +48,7 @@ module regfile8x16a_tb;
 			rdAddrB = $random;
 			@(negedge clk) $display("Read Case:%d, Read Address A: %b, Read Address B: %b, Data A: %b, Data B: %b", i, rdAddrA, rdAddrB, rdDataA, rdDataB);
 		end
+		$stop;
 	end
 
 endmodule

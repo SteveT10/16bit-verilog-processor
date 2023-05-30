@@ -1,4 +1,4 @@
-module Controller(IR, 
+module FSM(IR, 
 				PC_clr, 
 				IR_Id, 
 				PC_up, 
@@ -97,14 +97,14 @@ endmodule
 
 
 
-module Controller_tb;
+module FSM_tb;
 	logic clk, PC_clr, IR_Id, PC_up, D_wr, RF_s, RF_W_en;
 	logic [3:0] RF_W_addr, RF_Ra_addr, RF_Rb_addr;
 	logic [7:0] D_addr;
 	logic [15:0] IR;
 	logic [2:0] ALU_s0;
 
-	Controller DUT(IR, 
+	FSM DUT(IR, 
 				PC_clr, 
 				IR_Id, 
 				PC_up, 
@@ -164,7 +164,7 @@ module Controller_tb;
 		
 		//Store again after halt
 		IR = 16'b0001101010101011; #20;
-		$display("Store Operation After Halt (Should not Change) | Data Address: %b | Data Write: %b | A Address: %b", D_addr, D_wr, RF_Ra_addr);
+		$display("Store Operation After Halt (Should not Change from Previous Store) | Data Address: %b | Data Write: %b | A Address: %b", D_addr, D_wr, RF_Ra_addr);
 		
 		$stop;
 

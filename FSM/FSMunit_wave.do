@@ -1,14 +1,18 @@
 onerror {resume}
 quietly WaveActivateNextPane {} 0
-add wave -noupdate /regfile8x16a_tb/clk
-add wave -noupdate /regfile8x16a_tb/write
-add wave -noupdate /regfile8x16a_tb/wrAddr
-add wave -noupdate /regfile8x16a_tb/rdAddrA
-add wave -noupdate /regfile8x16a_tb/rdAddrB
-add wave -noupdate /regfile8x16a_tb/wrData
-add wave -noupdate /regfile8x16a_tb/rdDataA
-add wave -noupdate /regfile8x16a_tb/rdDataB
-add wave -noupdate /TwoDigit_BCD_Adder_tb/ErrorSig
+add wave -noupdate /FSM_tb/IR
+add wave -noupdate /FSM_tb/PC_clr
+add wave -noupdate /FSM_tb/IR_Id
+add wave -noupdate /FSM_tb/PC_up
+add wave -noupdate /FSM_tb/D_addr
+add wave -noupdate /FSM_tb/D_wr
+add wave -noupdate /FSM_tb/RF_s
+add wave -noupdate /FSM_tb/RF_W_addr
+add wave -noupdate /FSM_tb/RF_W_en
+add wave -noupdate /FSM_tb/RF_Ra_addr
+add wave -noupdate /FSM_tb/RF_Rb_addr
+add wave -noupdate /FSM_tb/ALU_s0
+add wave -noupdate /FSM_tb/clk
 TreeUpdate [SetDefaultTree]
 WaveRestoreCursors {{Cursor 1} {0 ps} 0}
 quietly wave cursor active 0

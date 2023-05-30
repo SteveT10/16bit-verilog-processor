@@ -1,0 +1,36 @@
+# Reading pref.tcl
+# OpenFile C:/Users/steve/OneDrive/Documents/GitHub/TCES330_Project/TCES330_Project/FSM/FSM.sv
+do runFSMunit.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 10:45:57 on May 30,2023
+# vlog -reportprogress 300 ./FSM.sv 
+# -- Compiling module FSM
+# -- Compiling module FSM_tb
+# 
+# Top level modules:
+# 	FSM_tb
+# End time: 10:45:57 on May 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work FSM_tb 
+# Start time: 10:45:57 on May 30,2023
+# Loading sv_std.std
+# Loading work.FSM_tb
+# Loading work.FSM
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Instruction Register Address: 0011000000000001 | PC_clr = 1
+# IR_Id = 1, PC_up = 1
+# Add Operation: Write Address = 0001 | Write Enable = 1 | A Address = 0000 | B Address = 0000 | ALU Select = 001
+# Sub Operation: Write Address = 0001 | Write Enable = 1 | A Address = 0000 | B Address = 0000 | ALU Select = 010
+# Load Operation | Data Address: 00000000 | Register File Select Bit: 1 | Write Address: 0001 | Write Enable: 1
+# Store Operation | Data Address: 00000001 | Data Write: 1 | A Address: 0000
+# Previous Sub Operation w/ NOOP: Write Address = 0001 | Write Enable = 1 | A Address = 0000 | B Address = 0000 | ALU Select = 010
+# Store Operation After Halt (Should not Change from Previous Store) | Data Address: 00000001 | Data Write: 1 | A Address: 0000
+# ** Note: $stop    : ./FSM.sv(169)
+#    Time: 600 ps  Iteration: 0  Instance: /FSM_tb
+# Break in Module FSM_tb at ./FSM.sv line 169
+quit -sim
+# End time: 10:47:59 on May 30,2023, Elapsed time: 0:02:02
+# Errors: 0, Warnings: 0
