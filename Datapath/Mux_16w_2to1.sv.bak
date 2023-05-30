@@ -10,7 +10,6 @@ module Mux_16w_2to1(Sel, A, B, M);
 endmodule
 
 // Testbench
-1ns/1ns
 module Mux_16w_2to1_tb();
 	logic Sel; //Select
 	logic [15:0] A, B; //Mux inputs
