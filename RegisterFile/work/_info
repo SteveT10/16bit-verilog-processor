@@ -11,24 +11,24 @@ cModel Technology
 Z0 dC:/Users/ea-co/OneDrive - Cooperlan/Intel Quartus Projects/TCES330_Project/RegisterFile
 vregfile16x16a
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1685469255
+Z2 !s110 1685601073
 !i10b 1
 !s100 ;boHFZHC5K6A[a;m?BMh?0
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
 Iofm=jfdCD@g6EBELYWhCK3
 Z4 VDg1SIo80bB@j0V0VzS_@n1
 S1
-Z5 dC:/Users/steve/OneDrive/Documents/GitHub/TCES330_Project/TCES330_Project/RegisterFile
-Z6 w1685469239
+Z5 dC:/Users/Steven/Documents/GitHub/TCES330_Project/RegisterFile
+Z6 w1685600080
 Z7 8./regfile16x16a.sv
 Z8 F./regfile16x16a.sv
-!i122 8
+!i122 14
 Z9 L0 1 21
 Z10 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z11 !s108 1685469255.000000
+Z11 !s108 1685601073.000000
 !s107 ./regfile16x16a.sv|
 Z12 !s90 -reportprogress|300|./regfile16x16a.sv|
 !i113 1
@@ -46,7 +46,7 @@ R5
 R6
 R7
 R8
-!i122 8
+!i122 14
 L0 23 32
 R10
 r1

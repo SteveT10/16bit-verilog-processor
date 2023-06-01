@@ -48,6 +48,7 @@ module regfile16x16a_tb;
 			rdAddrB = $random;
 			@(negedge clk) $display("Read Case:%d, Read Address A: %b, Read Address B: %b, Data A: %b, Data B: %b", i, rdAddrA, rdAddrB, rdDataA, rdDataB);
 		end
+		$stop;
 	end
 
 endmodule

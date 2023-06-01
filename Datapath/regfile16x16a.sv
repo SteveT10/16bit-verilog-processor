@@ -1,12 +1,14 @@
-module regfile16x16a
-	(input clk,
-	 input write,
-	 input [3:0] wrAddr,
-	 input [15:0] wrData,
-	 input [3:0] rdAddrA,
-	 output logic [15:0] rdDataA,
-	 input [3:0] rdAddrB,
-	 output logic [15:0] rdDataB );
+module regfile16x16a (clk, write, wrAddr, wrData, rdAddrA,
+                      rdDataA, rdAddrB, rdDataB);
+
+	input clk;
+	input write;
+	input [3:0] wrAddr;
+	input [15:0] wrData;
+	input [3:0] rdAddrA;
+	input [3:0] rdAddrB;
+	output logic [15:0] rdDataA;
+	output logic [15:0] rdDataB;
 
 	logic [15:0] regfile [0:15];
 	always_ff @(posedge clk) begin
