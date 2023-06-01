@@ -8,23 +8,23 @@ Based on Figure 4 in Datapath view.
  */
 module Datapath(ALU_s0, D_addr, clk, rdAddrA, D_wr, RF_sel, WriteAddr, 
                 rdAddrB, RF_W_en, ALU_A_out, ALU_B_out, ALUout);
-	
+
 	input clk;
 	input D_wr, RF_sel, RF_W_en; //Data write enable, Register select, Register write enable.
 	input [7:0] D_addr; //Data address to access.
 	input [3:0] WriteAddr, rdAddrA, rdAddrB; //write address, read address A, and B
 	input [2:0] ALU_s0; //ALU select
 
-    logic [15:0] Data_to_Mux //Data output to Mux input B
+    logic [15:0] Data_to_Mux; //Data output to Mux input B
 	logic [15:0] Wr_Data; //Mux to RegFiles: data to write
 	logic [15:0] ALU_A_in, ALU_B_in; //RegFiles to ALU
-    logic [15:0] ALU_out_to_Mux //ALU out to mux input
+    logic [15:0] ALU_out_to_Mux; //ALU out to mux input
  	
     //Monitor outputs
-	output logic [15:0] ALU_A_out, ALU_B_out, ALUOut;
+	output logic [15:0] ALU_A_out, ALU_B_out, ALUout;
 	assign ALU_A_out = ALU_A_in;
 	assign ALU_B_out = ALU_B_in;
-	assign ALUOut = ALU_out_to_Mux;
+	assign ALUout = ALU_out_to_Mux;
 
     //DataMemory (address, clock, data, wren, q);
     DataMemory RAMunit(D_addr, clk, rdAddrA, D_wr, Data_to_Mux);
@@ -48,6 +48,7 @@ module Datapath(ALU_s0, D_addr, clk, rdAddrA, D_wr, RF_sel, WriteAddr,
 
 endmodule
 
+`timescale 1ns/1ns
 module Datapath_tb();
 
     logic clk;
@@ -57,7 +58,7 @@ module Datapath_tb();
 	logic [2:0] ALU_s0; //ALU select
  	
     //Monitor outputs
-	logic [15:0] ALU_A_out, ALU_B_out, ALUOut;
+	logic [15:0] ALU_A_out, ALU_B_out, ALUout;
 
     //Instruction from IR to be executed:
 
@@ -77,11 +78,14 @@ module Datapath_tb();
 	end 
 
     //TODO 
-        //ADD ASSERT AND MONITOR RAM.
-        //SET IR FOR EACH OPERATION
-        //EDGE CASES: START AND END OF REG, START AND END OF DATA MEM.
-        //ADD
+        //Does assert and monitor ram work?
+        //DO we need to run the tests posted on classes
+        //What do we run quartus projects on?
+        //Why do we need to wait clock cycle to enable w_en
 
+        //EDGE CASES: START AND END OF REG, START AND END OF DATA MEM?
+        //CLEAR SIGNALS AFTER TESTING EVERY OP?
+    
     initial begin
         //Init: PC_clr = 1, Fetch IR_Id = 1, PC_up = 1, Decode are 
         //Controller Unit states only.
@@ -99,17 +103,19 @@ module Datapath_tb();
         @(negedge clk)
         $display($time,,,"Add Operation: Wr Addr = %b | Wr En = %d | A Addr = %b | B Addr = %b | ALU Sel = %b",
                  WriteAddr, RF_W_en, rdAddrA, rdAddrB, ALU_s0);
+        //assert(Reg 3 = 1111 + 2222 = 3333)
         #5;
 
         /**************ADD 2**************/
         IR = 12'h234; //Reg 4 = Reg 2 + Reg 3
         @(negedge clk)
         $display($time,,,"Add Operation 2: Wr Addr = %b | Wr En = %d | A Addr = %b | B Addr = %b | ALU Sel = %b",
-                 WriteAddr, RF_W_en, rdAddrA, rdAddrB, ALU_s0);        
+                 WriteAddr, RF_W_en, rdAddrA, rdAddrB, ALU_s0); 
+        //assert(Reg 4 = 2222 + 3333 = 5555)       
         #5;
 
         /**************SUB 1**************/
-        IR = 12'h921; //Reg 9 = Reg 2 - Reg 1
+        IR = 12'h021; //Reg 0 = Reg 2 - Reg 1? double check with order
         //WriteAddr = IR[3:0]; 
         //rdAddrA = IR[11:8];
         //rdAddrB = IR[7:4];
@@ -118,13 +124,19 @@ module Datapath_tb();
         RF_sel = 1'b0;
         @(negedge clk)
         $display($time,,,"Sub Operation: Wr Addr = %b | Wr En= %d | A Addr = %b | B Addr = %b | ALU Sel = %b",
-                 WriteAddr, RF_W_en, rdAddrA, rdAddrB, ALU_s0);        
+                 WriteAddr, RF_W_en, rdAddrA, rdAddrB, ALU_s0); 
+        $display($time,,,"Sub Operation: Wr Addr = %b | Wr En= %d | A Addr = %b | B Addr = %b | ALU Sel = %b",
+                 WriteAddr, RF_W_en, rdAddrA, rdAddrB, ALU_s0); 
+        //assert(Reg 0 = 2222 - 1111 = 1111)
+        assert(DUT.RAMunit.address == 8'h00 && DUT.RAMunit.wrData == 4'b1111);       
         #5;
 
         /**************LOAD A (First clock cycle)**************/
+        RF_W_en = 1'b0;
+        IR = 12'h1BA; // RF[0A] = D[1B]
         D_addr = IR[11:4];
-        RF_sel = 1'b0;
-        WriteAddr = IR[3:0];
+        //WriteAddr = IR[3:0];
+        RF_sel = 1'b1;
         @(negedge clk)
         $display($time,,,"Load Operation A | Data Addr: %b | RF Sel: %b | Wr Addr: %b | Write En: %b",
                  D_Addr, RF_sel, WriteAddr, RF_W_en);        
@@ -132,7 +144,6 @@ module Datapath_tb();
 
         /**************LOAD B (Second clock cycle)**************/
         //D_addr = IR[11:4];
-        RF_sel = 1'b1;
         //WriteAddr = IR[3:0];
         RF_W_en = 1'b1;
         @(negedge clk)
@@ -141,16 +152,25 @@ module Datapath_tb();
         #5;
 
         /**************STORE**************/
-        D_addr = IR[7:0];
+        IR = 12'hA6A; //D[6A] = RF[0A]
+        D_addr = IR[7:0]; 
         D_wr = 1'b1;
-        rdAddrA = IR[11:8];
+        //rdAddrA = IR[11:8];
         @(negedge clk)
-        $display($time,,,"Store Operation | Data Address: %b | Data Write: %b | A Address: %b",
+        $display($time,,,"Store Operation | Data Addr: %b | D Wr: %b | A Addr: %b",
                   D_addr, D_wr, rdAddrA);        
         #5;
-        $stop;
-        //No-op and Halt stop at state machine, we just repeat our previous values.
 
+        /**************NO-OP AND HALT**************/
+        D_wr = 1'b0;
+        RF_sel = 1'b0;
+        RF_W_en = 1'b0;
+        @(negedge clk)
+        $display($time,,,"Attempted Store After Halt Operation | Data Addr: %b | D Wr: %b | A Addr: %b",
+                  D_addr, D_wr, rdAddrA);        
+        #5;
+
+        $stop;
     end
 
 endmodule

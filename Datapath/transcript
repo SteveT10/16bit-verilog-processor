@@ -1,2 +1,238 @@
 # Reading pref.tcl
 # OpenFile C:/Users/steve/OneDrive/Documents/GitHub/TCES330_Project/TCES330_Project/Datapath/Datapath.sv
+do runDatapath.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:10:28 on Jun 01,2023
+# vlog -reportprogress 300 ./Datapath.sv 
+# -- Compiling module Datapath
+# ** Error: ./Datapath.sv(10): (vlog-2730) Undefined variable: 'ALUout'.
+# ** Error: ./Datapath.sv(10): (vlog-13294) Identifier must be declared with a port mode: ALUout.
+# -- Compiling module Datapath_tb
+# ** Error: (vlog-13069) ./Datapath.sv(131): near "=": syntax error, unexpected '=', expecting ++ or --.
+# ** Error: (vlog-13069) ./Datapath.sv(156): near "D_addr": syntax error, unexpected IDENTIFIER, expecting ';'.
+# End time: 13:10:29 on Jun 01,2023, Elapsed time: 0:00:01
+# Errors: 4, Warnings: 0
+# ** Error: C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runDatapath.do line 7
+# C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./Datapath.sv""
+do runDatapath.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:12:19 on Jun 01,2023
+# vlog -reportprogress 300 ./Datapath.sv 
+# -- Compiling module Datapath
+# -- Compiling module Datapath_tb
+# ** Error (suppressible): ./Datapath.sv(138): (vlog-12003) Variable 'WriteAddr' written by continuous and procedural assignments. See ./Datapath.sv(67). 
+# ** Error (suppressible): ./Datapath.sv(158): (vlog-12003) Variable 'rdAddrA' written by continuous and procedural assignments. See ./Datapath.sv(68). 
+# End time: 13:12:19 on Jun 01,2023, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# ** Error: C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runDatapath.do line 7
+# C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./Datapath.sv""
+do runDatapath.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:13:37 on Jun 01,2023
+# vlog -reportprogress 300 ./Datapath.sv 
+# -- Compiling module Datapath
+# -- Compiling module Datapath_tb
+# 
+# Top level modules:
+# 	Datapath_tb
+# End time: 13:13:37 on Jun 01,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:13:37 on Jun 01,2023
+# vlog -reportprogress 300 ./Mux_16w_2to1.sv 
+# -- Compiling module Mux_16w_2to1
+# ** Error: (vlog-13069) ./Mux_16w_2to1.sv(13): near "1ns": syntax error, unexpected TIME_LITERAL, expecting class.
+# End time: 13:13:37 on Jun 01,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runDatapath.do line 8
+# C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./Mux_16w_2to1.sv""
+do runDatapath.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:14:11 on Jun 01,2023
+# vlog -reportprogress 300 ./Datapath.sv 
+# -- Compiling module Datapath
+# -- Compiling module Datapath_tb
+# 
+# Top level modules:
+# 	Datapath_tb
+# End time: 13:14:11 on Jun 01,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:14:11 on Jun 01,2023
+# vlog -reportprogress 300 ./Mux_16w_2to1.sv 
+# -- Compiling module Mux_16w_2to1
+# -- Compiling module Mux_16w_2to1_tb
+# 
+# Top level modules:
+# 	Mux_16w_2to1_tb
+# End time: 13:14:12 on Jun 01,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:14:12 on Jun 01,2023
+# vlog -reportprogress 300 ./regfile16x16a.sv 
+# -- Compiling module regfile16x16a
+# -- Compiling module regfile16x16a_tb
+# 
+# Top level modules:
+# 	regfile16x16a_tb
+# End time: 13:14:12 on Jun 01,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:14:12 on Jun 01,2023
+# vlog -reportprogress 300 ./DataMemory.sv 
+# ** Error: (vlog-7) Failed to open design unit file "./DataMemory.sv" in read mode.
+# No such file or directory. (errno = ENOENT)
+# End time: 13:14:12 on Jun 01,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runDatapath.do line 10
+# C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./DataMemory.sv""
+do runDatapath.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:14:42 on Jun 01,2023
+# vlog -reportprogress 300 ./Datapath.sv 
+# -- Compiling module Datapath
+# -- Compiling module Datapath_tb
+# 
+# Top level modules:
+# 	Datapath_tb
+# End time: 13:14:42 on Jun 01,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:14:42 on Jun 01,2023
+# vlog -reportprogress 300 ./Mux_16w_2to1.sv 
+# -- Compiling module Mux_16w_2to1
+# -- Compiling module Mux_16w_2to1_tb
+# 
+# Top level modules:
+# 	Mux_16w_2to1_tb
+# End time: 13:14:43 on Jun 01,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:14:43 on Jun 01,2023
+# vlog -reportprogress 300 ./regfile16x16a.sv 
+# -- Compiling module regfile16x16a
+# -- Compiling module regfile16x16a_tb
+# 
+# Top level modules:
+# 	regfile16x16a_tb
+# End time: 13:14:43 on Jun 01,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:14:43 on Jun 01,2023
+# vlog -reportprogress 300 ./DataMemory.v 
+# -- Compiling module DataMemory
+# 
+# Top level modules:
+# 	DataMemory
+# End time: 13:14:43 on Jun 01,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work Datapath_tb 
+# Start time: 13:14:43 on Jun 01,2023
+# Loading sv_std.std
+# Loading work.Datapath_tb
+# Loading work.Datapath
+# Loading work.DataMemory
+# ** Error: (vsim-3033) Instantiation of 'altsyncram' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /Datapath_tb/DUT/RAMunit File: ./DataMemory.v Line: 63
+#         Searched libraries:
+#             C:/Users/steve/OneDrive/Documents/GitHub/TCES330_Project/TCES330_Project/Datapath/work
+# ** Error: (vsim-3033) Instantiation of 'Mux_16w_2to_1' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /Datapath_tb/DUT File: ./Datapath.sv Line: 33
+#         Searched libraries:
+#             C:/Users/steve/OneDrive/Documents/GitHub/TCES330_Project/TCES330_Project/Datapath/work
+# Loading work.regfile16x16a
+# ** Error: (vsim-3033) Instantiation of 'ALU' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /Datapath_tb/DUT File: ./Datapath.sv Line: 47
+#         Searched libraries:
+#             C:/Users/steve/OneDrive/Documents/GitHub/TCES330_Project/TCES330_Project/Datapath/work
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./runDatapath.do PAUSED at line 15
+do runDatapath.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:15:50 on Jun 01,2023
+# vlog -reportprogress 300 ./Datapath.sv 
+# -- Compiling module Datapath
+# -- Compiling module Datapath_tb
+# 
+# Top level modules:
+# 	Datapath_tb
+# End time: 13:15:50 on Jun 01,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:15:50 on Jun 01,2023
+# vlog -reportprogress 300 ./Mux_16w_2to1.sv 
+# -- Compiling module Mux_16w_2to1
+# -- Compiling module Mux_16w_2to1_tb
+# 
+# Top level modules:
+# 	Mux_16w_2to1_tb
+# End time: 13:15:50 on Jun 01,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:15:50 on Jun 01,2023
+# vlog -reportprogress 300 ./regfile16x16a.sv 
+# -- Compiling module regfile16x16a
+# -- Compiling module regfile16x16a_tb
+# 
+# Top level modules:
+# 	regfile16x16a_tb
+# End time: 13:15:50 on Jun 01,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:15:50 on Jun 01,2023
+# vlog -reportprogress 300 ./ALU.sv 
+# -- Compiling module ALU
+# -- Compiling module ALU_tb
+# 
+# Top level modules:
+# 	ALU_tb
+# End time: 13:15:51 on Jun 01,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:15:51 on Jun 01,2023
+# vlog -reportprogress 300 ./DataMemory.v 
+# -- Compiling module DataMemory
+# 
+# Top level modules:
+# 	DataMemory
+# End time: 13:15:51 on Jun 01,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work Datapath_tb 
+# Start time: 13:14:43 on Jun 01,2023
+# Loading sv_std.std
+# Loading work.Datapath_tb
+# Loading work.Datapath
+# Loading work.DataMemory
+# ** Error: (vsim-3033) Instantiation of 'altsyncram' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /Datapath_tb/DUT/RAMunit File: ./DataMemory.v Line: 63
+#         Searched libraries:
+#             C:/Users/steve/OneDrive/Documents/GitHub/TCES330_Project/TCES330_Project/Datapath/work
+# ** Error: (vsim-3033) Instantiation of 'Mux_16w_2to_1' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /Datapath_tb/DUT File: ./Datapath.sv Line: 33
+#         Searched libraries:
+#             C:/Users/steve/OneDrive/Documents/GitHub/TCES330_Project/TCES330_Project/Datapath/work
+# Loading work.regfile16x16a
+# Loading work.ALU
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./runDatapath.do PAUSED at line 16

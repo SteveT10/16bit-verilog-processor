@@ -20,6 +20,7 @@ module IR(Clk, inData, outData, Id);
 
 endmodule
 
+`timescale 1ns/1ns
 module IR_tb;
 	
 	logic [15:0] inData, outData;
