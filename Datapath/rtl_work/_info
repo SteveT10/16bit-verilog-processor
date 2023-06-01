@@ -1,0 +1,241 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/steve/OneDrive/Documents/GitHub/TCES330_Project/TCES330_Project/Datapath
+vALU
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z2 !s110 1685659350
+!i10b 1
+!s100 BiMRc:ZGiTB4=6b0BFBFY3
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+Iek=@f9><Ycol9JAAW`Djl2
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+Z5 w1684863891
+Z6 8./ALU.sv
+Z7 F./ALU.sv
+!i122 3
+L0 9 21
+Z8 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z9 !s108 1685659350.000000
+Z10 !s107 ./ALU.sv|
+Z11 !s90 -reportprogress|300|-work|work|+acc|./ALU.sv|
+!i113 1
+Z12 o-work work +acc
+Z13 tCvgOpt 0
+n@a@l@u
+vALU_tb
+R1
+R2
+!i10b 1
+!s100 XlNn[I2>5GYgKR0IUM6H^2
+R3
+IND_?;i:@Kb;dRdR`=nU?F0
+R4
+S1
+R0
+R5
+R6
+R7
+!i122 3
+L0 31 23
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+n@a@l@u_tb
+vDataMemory
+R2
+!i10b 1
+!s100 <RaojzVeg0096aGLTJWaA0
+R3
+IC2Sb5A9alF9;=FQz10jUb3
+R4
+R0
+w1685487129
+8./DataMemory.v
+F./DataMemory.v
+!i122 4
+L0 40 66
+R8
+r1
+!s85 0
+31
+R9
+!s107 ./DataMemory.v|
+!s90 -reportprogress|300|-work|work|+acc|./DataMemory.v|
+!i113 1
+R12
+R13
+n@data@memory
+vDatapath
+R1
+Z14 !s110 1685659349
+!i10b 1
+!s100 5f5ogNUPd8EhbbDJC1?C91
+R3
+IAcNn<4ZOJ6XUDBWcPO4fZ0
+R4
+S1
+R0
+Z15 w1685659337
+Z16 8./Datapath.sv
+Z17 F./Datapath.sv
+!i122 0
+L0 9 43
+R8
+r1
+!s85 0
+31
+Z18 !s108 1685659349.000000
+Z19 !s107 ./Datapath.sv|
+Z20 !s90 -reportprogress|300|-work|work|+acc|./Datapath.sv|
+!i113 1
+R12
+R13
+n@datapath
+vDatapath_tb
+R1
+R14
+!i10b 1
+!s100 YALSlXdH[]22jd>eQ4b`=3
+R3
+IE;k<an849GBK`W>T^_lXY0
+R4
+S1
+R0
+R15
+R16
+R17
+!i122 0
+L0 54 168
+R8
+r1
+!s85 0
+31
+R18
+R19
+R20
+!i113 1
+R12
+R13
+n@datapath_tb
+vMux_16w_2to1
+R1
+R14
+!i10b 1
+!s100 6Lm]lL:gm>=BVITjN=YXS3
+R3
+I7[IHBS:UT<CTHno;S3GMA2
+R4
+S1
+R0
+Z21 w1685650445
+Z22 8./Mux_16w_2to1.sv
+Z23 F./Mux_16w_2to1.sv
+!i122 1
+L0 1 10
+R8
+r1
+!s85 0
+31
+R18
+Z24 !s107 ./Mux_16w_2to1.sv|
+Z25 !s90 -reportprogress|300|-work|work|+acc|./Mux_16w_2to1.sv|
+!i113 1
+R12
+R13
+n@mux_16w_2to1
+vMux_16w_2to1_tb
+R1
+R14
+!i10b 1
+!s100 S9<M=L`dFBHDnf1SGF]5E2
+R3
+IlPO^<>^HOXf3Q37z2_MCz0
+R4
+S1
+R0
+R21
+R22
+R23
+!i122 1
+L0 13 21
+R8
+r1
+!s85 0
+31
+R18
+R24
+R25
+!i113 1
+R12
+R13
+n@mux_16w_2to1_tb
+vregfile16x16a
+R1
+R2
+!i10b 1
+!s100 X]Y=ZfcRa56zd:ZeF6ae02
+R3
+IJS[nO>S^1ZF^?;aB_n72C3
+R4
+S1
+R0
+Z26 w1685639903
+Z27 8./regfile16x16a.sv
+Z28 F./regfile16x16a.sv
+!i122 2
+L0 1 23
+R8
+r1
+!s85 0
+31
+R9
+Z29 !s107 ./regfile16x16a.sv|
+Z30 !s90 -reportprogress|300|-work|work|+acc|./regfile16x16a.sv|
+!i113 1
+R12
+R13
+vregfile16x16a_tb
+R1
+R2
+!i10b 1
+!s100 l:<jW^D9_Xkii3ba>h2<h2
+R3
+IOFTeMY[L3daNCdiNT=84<3
+R4
+S1
+R0
+R26
+R27
+R28
+!i122 2
+L0 25 32
+R8
+r1
+!s85 0
+31
+R9
+R29
+R30
+!i113 1
+R12
+R13

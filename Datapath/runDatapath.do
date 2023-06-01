@@ -1,19 +1,28 @@
-# Create work library
-vlib work
+# turn on verbage
+transcript on
+
+# Get rid of current work lib
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+
+# Create work library and map it to 'work'
+vlib rtl_work
+vmap work rtl_work
 
 # Compile Verilog
 #     All Verilog files that are part of this design should have
 #     their own "vlog" line below.
-vlog "./Datapath.sv"
-vlog "./Mux_16w_2to1.sv"
-vlog "./regfile16x16a.sv"
-vlog "./ALU.sv"
-vlog "./DataMemory.v"
+vlog -work work +acc "./Datapath.sv"
+vlog -work work +acc "./Mux_16w_2to1.sv"
+vlog -work work +acc "./regfile16x16a.sv"
+vlog -work work +acc "./ALU.sv"
+vlog -work work +acc "./DataMemory.v"
 
 # Call vsim to invoke simulator
 #     Make sure the last item on the line is the name of the
 #     testbench module you want to execute.
-vsim -voptargs="+acc" -t 1ps -lib work Datapath_tb
+vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc" -fsmdebug  Datapath_tb
 
 # Source the wave do file
 #     This should be the file that sets up the signal window for
@@ -27,5 +36,8 @@ view signals
 
 # Run the simulation
 run -all
+
+# View the entire wave display
+wave zoomfull
 
 # End
