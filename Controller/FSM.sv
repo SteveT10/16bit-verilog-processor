@@ -10,6 +10,8 @@ module FSM(IR,
 				RF_Ra_addr, 
 				RF_Rb_addr, 
 				ALU_s0,
+				outputCurrentState,
+				outputNextState,
 				clk);
 
 	input [15:0] IR;
@@ -18,20 +20,34 @@ module FSM(IR,
 	output logic [3:0] RF_W_addr, RF_Ra_addr, RF_Rb_addr;
 	output logic PC_clr, IR_Id, PC_up, D_wr, RF_s, RF_W_en;
 	output logic [2:0] ALU_s0;
+	output logic [3:0] outputCurrentState, outputNextState;
 	logic [3:0] currentState, nextState;
-	
+	assign outputCurrentState = currentState;
+	assign outputNextState = nextState;
 	localparam Init = 4'h0, Fetch = 4'h1, Decode = 4'h2, NOOP = 4'h3, LOAD_A = 4'h4, 
 			   LOAD_B = 4'h5, STORE = 4'h6, ADD = 4'h7, HALT = 4'h8, SUB = 4'h9;
 	
 	always_comb begin
+		PC_clr = 1'b0;
+		PC_up = 1'b0;
+		IR_Id = 1'b0;
+		D_wr = 1'b0;
+		RF_W_en = 1'b0;
+		RF_s = 1'b0;
+		ALU_s0 = 3'b000;
+		D_addr = 8'b0;
+		RF_W_addr = 4'b0;
+		RF_Ra_addr = 4'b0;
+		RF_Rb_addr = 4'b0;
+		
 		case(currentState)
 			Init: begin
-				PC_clr = 1;
+				PC_clr = 1'b1;
 				nextState = Fetch;
 			end
 			Fetch: begin
-				PC_up = 1; 
-				IR_Id = 1;
+				PC_up = 1'b1; 
+				IR_Id = 1'b1;
 				nextState = Decode;
 			end
 			Decode: begin
@@ -47,39 +63,39 @@ module FSM(IR,
 			end
 			LOAD_A: begin
 				D_addr = IR[11:4];
-				RF_s = 1;
+				RF_s = 1'b1;
 				RF_W_addr = IR[3:0];
 				nextState = LOAD_B;
 			end
 			LOAD_B: begin
 				D_addr = IR[11:4];
-				RF_s = 1;
+				RF_s = 1'b1;
 				RF_W_addr = IR[3:0];
-				RF_W_en = 1;
+				RF_W_en = 1'b1;
 				nextState = Fetch;
 			end
 			STORE: begin
 				D_addr = IR[7:0];
-				D_wr = 1;
+				D_wr = 1'b1;
 				RF_Ra_addr = IR[11:8];
 				nextState = Fetch;
 			end
 			ADD: begin
 				RF_W_addr = IR[3:0];
-				RF_W_en = 1;
+				RF_W_en = 1'b1;
 				RF_Ra_addr = IR[11:8];
 				RF_Rb_addr = IR[7:4];
-				ALU_s0 = 1;
-				RF_s = 0;
+				ALU_s0 = 3'b001;
+				RF_s = 1'b0;
 				nextState = Fetch;
 			end
 			SUB: begin
 				RF_W_addr = IR[3:0];
-				RF_W_en = 1;
+				RF_W_en = 1'b1;
 				RF_Ra_addr = IR[11:8];
 				RF_Rb_addr = IR[7:4];
-				ALU_s0 = 2;
-				RF_s = 0;
+				ALU_s0 = 3'b010;
+				RF_s = 1'b0;
 				nextState = Fetch;
 			end
 			HALT: begin
