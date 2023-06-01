@@ -12,10 +12,24 @@ module ControlUnit(Clk, Reset, ALU_s0, D_Addr, D_Wr, IR_Out, nextState, outState
 		wire [15:0] q;
 		wire PCClr, PCUp, IRLd;
 
-		PC unit3(Clk, PCClr, PCUp, PC_Out);
-		InstructionMemory unit(PC_Out, Clk, q);
-		IR unit1(Clk, q, IR_Out, IRLd);
-		FSM unit2(IR_Out, PCClr, IRLd, PCUp, D_Addr, D_Wr, RF_s, RF_W_Addr, RF_W_en, RF_Ra_Addr, RF_Rb_Addr, ALU_s0, outState, nextState, Clk);
+		InstructionMemory ROM(.address(PC_Out), .clock(Clk), .q(q));
+		IR instrucReg(.Clk(Clk), .inData(q), .outData(IR_Out), .Id(IRLd));
+		FSM controller(.IR(IR_Out),
+			        .PC_clr(PCClr),
+				.IR_Id(IRLd),
+				.PC_up(PCUp),
+				.D_addr(D_Addr),
+				.D_wr(D_Wr),
+				.RF_s(RF_s),
+				.RF_W_addr(RF_W_Addr),
+				.RF_W_en(RF_W_en),
+				.RF_Ra_addr(RF_Ra_Addr),
+				.RF_Rb_addr(RF_Rb_Addr),
+				.ALU_s0(ALU_s0),
+				.outputCurrentState(outState),
+				.outputNextState(nextState),
+				.clk(Clk));
+		PC counter(.Clk(Clk), .Clr(PCClr), .Up(PCUp), .Addr(PC_Out));
 		
 	
 		
@@ -31,8 +45,9 @@ module ControlUnit_tb;
 	wire [3:0] nextState, outState, RF_Ra_Addr, RF_Rb_Addr, RF_W_Addr;
 	wire [2:0] ALU_s0;
 
-	ControlUnit DUT(Clk, Reset, ALU_s0, D_Addr, D_Wr, IR_Out, nextState, outState, PC_Out, RF_Ra_Addr, RF_Rb_Addr, RF_W_Addr, RF_W_en, RF_s);
-	
+	ControlUnit DUT(.Clk(Clk), .Reset(Reset), .ALU_s0(ALU_s0), .D_Addr(D_Addr), .D_Wr(D_Wr), .IR_Out(IR_out), 
+			.nextState(nextState), .outState(outState), .PC_Out(PC_Out), .RF_Ra_Addr(RF_Ra_Addr), 
+			.RF_Rb_Addr(RF_Rb_Addr), .RF_W_Addr(RF_W_Addr), .RF_W_en(RF_W_en), .RF_s(RF_s));
 	always begin
 		Clk = 0; #10;
 		Clk = 1; #10;
