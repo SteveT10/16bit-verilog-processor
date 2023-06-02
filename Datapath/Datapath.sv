@@ -42,7 +42,7 @@ module Datapath(ALU_s0, D_addr, clk, rdAddrA, D_wr, RF_sel, WriteAddr,
     DataMemory RAMunit(D_addr, clk, Ra_data, D_wr, Data_to_Mux);
 
     //Mux_16w_2to1(Sel, A, B, M);
-    Mux_16w_2to1 MuxUnit(RF_sel, ALU_out_to_Mux, Data_to_Mux, Wr_Data);
+    Mux_16w_2to1 MuxUnit(RF_sel, Data_to_Mux, ALU_out_to_Mux, Wr_Data);
 
 
     //ALU(SelectFunc, A, B, Q); 
@@ -100,7 +100,7 @@ module Datapath_tb();
         D_addr = IR[11:4];
         D_wr = 1'b0;
         //WriteAddr = IR[3:0];
-        RF_sel = 1'b0;
+        RF_sel = 1'b1; //BECAREFUL OF MUX SEL
         @(negedge clk)
         $display($time,,,"Load into REG 1 A | Data Addr: %b | RF Sel: %b | Wr Addr: %b | Write En: %b",
                  D_addr, RF_sel, WriteAddr, RF_W_en);        
@@ -124,7 +124,7 @@ module Datapath_tb();
         @(negedge clk)
         $display($time,,,"Store Operation | Data Addr: %b | D Wr: %b | A Addr: %b",
                   D_addr, D_wr, rdAddrA);        
-        #20;
+        #40;
 
         // /**************LOAD INTO REG 2 A (First clock cycle)**************/
         // RF_W_en = 1'b0;
