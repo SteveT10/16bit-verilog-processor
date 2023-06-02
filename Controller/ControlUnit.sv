@@ -28,7 +28,8 @@ module ControlUnit(Clk, Reset, ALU_s0, D_Addr, D_Wr, IR_Out, nextState, outState
 				.ALU_s0(ALU_s0),
 				.outputCurrentState(outState),
 				.outputNextState(nextState),
-				.clk(Clk));
+				.clk(Clk),
+				.Reset(Reset));
 		PC counter(.Clk(Clk), .Clr(PCClr), .Up(PCUp), .Addr(PC_Out));
 		
 	

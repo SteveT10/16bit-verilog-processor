@@ -11,24 +11,24 @@ cModel Technology
 Z0 dC:/Users/Steven/Documents/GitHub/TCES330_Project/Controller
 vControlUnit
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1685679553
+Z2 !s110 1685733862
 !i10b 1
-!s100 D`SQ4O;3TS8i8AE]CCGK91
+!s100 jiCBeWB3FK2HeRPddCm8R3
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
-I;lc6@K[9CDIm3=QfJNN`A2
+IlQOBnb@:7gb@^Wm^bO1@h3
 Z4 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
-Z5 w1685674702
+Z5 w1685733848
 Z6 8./ControlUnit.sv
 Z7 F./ControlUnit.sv
 !i122 4
-L0 1 36
+L0 1 37
 Z8 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z9 !s108 1685679553.000000
+Z9 !s108 1685733862.000000
 !s107 ./ControlUnit.sv|
 Z10 !s90 -reportprogress|300|-work|work|+acc|./ControlUnit.sv|
 !i113 1
@@ -39,9 +39,9 @@ vControlUnit_tb
 R1
 R2
 !i10b 1
-!s100 CW]NZ[]f;7U:36i8HhdmN1
+!s100 `Umaz78o31_Yi[zXBj=8e1
 R3
-IJLe1df50ncboT[`ef_`k_3
+I=5PDYm;P;C[:Vkh=<2j;L2
 R4
 S1
 R0
@@ -49,7 +49,7 @@ R5
 R6
 R7
 !i122 4
-L0 39 25
+L0 40 25
 R8
 r1
 !s85 0
@@ -63,65 +63,65 @@ R12
 n@control@unit_tb
 vFSM
 R1
-Z14 !s110 1685679552
+R2
 !i10b 1
-!s100 =XjzzOe[3WAhPN?90;FWm3
+!s100 C5>moaY>ngEQ^R1UVCb3T1
 R3
-IfAHG:Y=D0jZTRPAR1@<3M1
+I2F0INE:i<CcnQeO?lQGm93
 R4
 S1
 R0
-R5
+Z14 w1685733306
 Z15 8./FSM.sv
 Z16 F./FSM.sv
 !i122 2
-L0 1 112
+L0 1 114
 R8
 r1
 !s85 0
 31
-Z17 !s108 1685679552.000000
-Z18 !s107 ./FSM.sv|
-Z19 !s90 -reportprogress|300|-work|work|+acc|./FSM.sv|
+R9
+Z17 !s107 ./FSM.sv|
+Z18 !s90 -reportprogress|300|-work|work|+acc|./FSM.sv|
 !i113 1
 R11
 R12
 n@f@s@m
 vFSM_tb
 R1
-R14
+R2
 !i10b 1
-!s100 ]hCWdHPDiB:mj2oJBQzl?1
+!s100 Jb58Ed4RNALEgdOhY9X9E1
 R3
-IB1XYAWBif9a<Id]BGB9z63
+I@nQk0;_iT<@W]CzM`:Y`N2
 R4
 S1
 R0
-R5
+R14
 R15
 R16
 !i122 2
-L0 116 74
+L0 118 74
 R8
 r1
 !s85 0
 31
+R9
 R17
 R18
-R19
 !i113 1
 R11
 R12
 n@f@s@m_tb
 vInstructionMemory
-R14
+R2
 !i10b 1
 !s100 >>G4LIS1<NJ4c7Re_XEnR1
 R3
 I`Jjf_e1L=@GS=gizb]Qk<0
 R4
 R0
-R5
+w1685674702
 8./InstructionMemory.v
 F./InstructionMemory.v
 !i122 0
@@ -130,7 +130,7 @@ R8
 r1
 !s85 0
 31
-R17
+R9
 !s107 ./InstructionMemory.v|
 !s90 -reportprogress|300|-work|work|+acc|./InstructionMemory.v|
 !i113 1
@@ -139,33 +139,33 @@ R12
 n@instruction@memory
 vIR
 R1
-R14
+R2
 !i10b 1
-!s100 k_iPHEd<P[8m4AYJm^lC[1
+!s100 5?@9`6ITg3No2Wb45`7aj0
 R3
-I:H9]iUTADKoj`g0TQCfO@2
+IgGF<O6VaVM`HJ_iH0JC293
 R4
 S1
 R0
-Z20 w1685591827
-Z21 8./IR.sv
-Z22 F./IR.sv
+Z19 w1685733454
+Z20 8./IR.sv
+Z21 F./IR.sv
 !i122 1
 L0 9 13
 R8
 r1
 !s85 0
 31
-R17
-Z23 !s107 ./IR.sv|
-Z24 !s90 -reportprogress|300|-work|work|+acc|./IR.sv|
+R9
+Z22 !s107 ./IR.sv|
+Z23 !s90 -reportprogress|300|-work|work|+acc|./IR.sv|
 !i113 1
 R11
 R12
 n@i@r
 vIR_tb
 R1
-R14
+R2
 !i10b 1
 !s100 m>2OHbEZOBlehoT1<0f:M0
 R3
@@ -173,18 +173,18 @@ IeXF2dj2hNT9dmV=:Ye<if2
 R4
 S1
 R0
+R19
 R20
 R21
-R22
 !i122 1
 L0 23 33
 R8
 r1
 !s85 0
 31
-R17
+R9
+R22
 R23
-R24
 !i113 1
 R11
 R12
@@ -193,13 +193,13 @@ vPC
 R1
 R2
 !i10b 1
-!s100 8RTn4U`OJQ?1mbKFlS=:M1
+!s100 bWcfoCA<FzbQAm_?:?A:H3
 R3
-IAOhR5Y7:[d_:B`?m^4@GN0
+I6U8n5k6Q2zLAI[PYZldeG1
 R4
 S1
 R0
-R20
+Z24 w1685733505
 Z25 8./PC.sv
 Z26 F./PC.sv
 !i122 3
@@ -208,7 +208,7 @@ R8
 r1
 !s85 0
 31
-R17
+R9
 Z27 !s107 ./PC.sv|
 Z28 !s90 -reportprogress|300|-work|work|+acc|./PC.sv|
 !i113 1
@@ -225,7 +225,7 @@ I>Odb97h7Z`mC03SLz6NfB0
 R4
 S1
 R0
-R20
+R24
 R25
 R26
 !i122 3
@@ -234,7 +234,7 @@ R8
 r1
 !s85 0
 31
-R17
+R9
 R27
 R28
 !i113 1

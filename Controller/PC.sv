@@ -12,9 +12,9 @@ module PC(Clk, Clr, Up, Addr);
 	output logic [6:0] Addr; //Next address to do.
 
 	always_ff @(posedge Clk) begin
-		if(Up & Clr) Addr <= 7'd0; //Clr is on
-		else if (Up & Addr < 7'b1111111) Addr <= Addr + 1'b1; //Increment
-		else Addr <= Addr; //if(!Up), NOTE TO SELF: may cause quartus errors. 
+		if(Clr) Addr <= 7'd0; //Clr is on
+		else if(Up) Addr <= Addr + 1'b1; //Increment
+		// else Addr <= Addr; //if(!Up), NOTE TO SELF: may cause quartus errors. 
 		//also once we reach max instructions, just repeat the last one.
 	end
 	
