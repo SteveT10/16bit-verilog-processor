@@ -14,7 +14,7 @@ module PC(Clk, Clr, Up, Addr);
 	always_ff @(posedge Clk) begin
 		if(Up & Clr) Addr <= 7'd0; //Clr is on
 		else if (Up & Addr < 7'b1111111) Addr <= Addr + 1'b1; //Increment
-		else Addr <= Addr; //if(!Up), 
+		else Addr <= Addr; //if(!Up), NOTE TO SELF: may cause quartus errors. 
 		//also once we reach max instructions, just repeat the last one.
 	end
 	

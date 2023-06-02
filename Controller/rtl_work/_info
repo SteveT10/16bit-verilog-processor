@@ -8,10 +8,10 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/ea-co/OneDrive/Documents/GitHub/TCES330_Project/Controller
+Z0 dC:/Users/Steven/Documents/GitHub/TCES330_Project/Controller
 vControlUnit
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1685663052
+Z2 !s110 1685679553
 !i10b 1
 !s100 D`SQ4O;3TS8i8AE]CCGK91
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -19,7 +19,7 @@ I;lc6@K[9CDIm3=QfJNN`A2
 Z4 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
-Z5 w1685663048
+Z5 w1685674702
 Z6 8./ControlUnit.sv
 Z7 F./ControlUnit.sv
 !i122 4
@@ -28,7 +28,7 @@ Z8 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z9 !s108 1685663052.000000
+Z9 !s108 1685679553.000000
 !s107 ./ControlUnit.sv|
 Z10 !s90 -reportprogress|300|-work|work|+acc|./ControlUnit.sv|
 !i113 1
@@ -63,7 +63,7 @@ R12
 n@control@unit_tb
 vFSM
 R1
-R2
+Z14 !s110 1685679552
 !i10b 1
 !s100 =XjzzOe[3WAhPN?90;FWm3
 R3
@@ -71,7 +71,7 @@ IfAHG:Y=D0jZTRPAR1@<3M1
 R4
 S1
 R0
-Z14 w1685662496
+R5
 Z15 8./FSM.sv
 Z16 F./FSM.sv
 !i122 2
@@ -80,16 +80,16 @@ R8
 r1
 !s85 0
 31
-R9
-Z17 !s107 ./FSM.sv|
-Z18 !s90 -reportprogress|300|-work|work|+acc|./FSM.sv|
+Z17 !s108 1685679552.000000
+Z18 !s107 ./FSM.sv|
+Z19 !s90 -reportprogress|300|-work|work|+acc|./FSM.sv|
 !i113 1
 R11
 R12
 n@f@s@m
 vFSM_tb
 R1
-R2
+R14
 !i10b 1
 !s100 ]hCWdHPDiB:mj2oJBQzl?1
 R3
@@ -97,7 +97,7 @@ IB1XYAWBif9a<Id]BGB9z63
 R4
 S1
 R0
-R14
+R5
 R15
 R16
 !i122 2
@@ -106,22 +106,22 @@ R8
 r1
 !s85 0
 31
-R9
 R17
 R18
+R19
 !i113 1
 R11
 R12
 n@f@s@m_tb
 vInstructionMemory
-!s110 1685663051
+R14
 !i10b 1
 !s100 >>G4LIS1<NJ4c7Re_XEnR1
 R3
 I`Jjf_e1L=@GS=gizb]Qk<0
 R4
 R0
-w1685483632
+R5
 8./InstructionMemory.v
 F./InstructionMemory.v
 !i122 0
@@ -130,7 +130,7 @@ R8
 r1
 !s85 0
 31
-!s108 1685663051.000000
+R17
 !s107 ./InstructionMemory.v|
 !s90 -reportprogress|300|-work|work|+acc|./InstructionMemory.v|
 !i113 1
@@ -139,7 +139,7 @@ R12
 n@instruction@memory
 vIR
 R1
-R2
+R14
 !i10b 1
 !s100 k_iPHEd<P[8m4AYJm^lC[1
 R3
@@ -147,25 +147,25 @@ I:H9]iUTADKoj`g0TQCfO@2
 R4
 S1
 R0
-Z19 w1685480626
-Z20 8./IR.sv
-Z21 F./IR.sv
+Z20 w1685591827
+Z21 8./IR.sv
+Z22 F./IR.sv
 !i122 1
 L0 9 13
 R8
 r1
 !s85 0
 31
-R9
-Z22 !s107 ./IR.sv|
-Z23 !s90 -reportprogress|300|-work|work|+acc|./IR.sv|
+R17
+Z23 !s107 ./IR.sv|
+Z24 !s90 -reportprogress|300|-work|work|+acc|./IR.sv|
 !i113 1
 R11
 R12
 n@i@r
 vIR_tb
 R1
-R2
+R14
 !i10b 1
 !s100 m>2OHbEZOBlehoT1<0f:M0
 R3
@@ -173,18 +173,18 @@ IeXF2dj2hNT9dmV=:Ye<if2
 R4
 S1
 R0
-R19
 R20
 R21
+R22
 !i122 1
 L0 23 33
 R8
 r1
 !s85 0
 31
-R9
-R22
+R17
 R23
+R24
 !i113 1
 R11
 R12
@@ -199,7 +199,7 @@ IAOhR5Y7:[d_:B`?m^4@GN0
 R4
 S1
 R0
-Z24 w1685659294
+R20
 Z25 8./PC.sv
 Z26 F./PC.sv
 !i122 3
@@ -208,7 +208,7 @@ R8
 r1
 !s85 0
 31
-R9
+R17
 Z27 !s107 ./PC.sv|
 Z28 !s90 -reportprogress|300|-work|work|+acc|./PC.sv|
 !i113 1
@@ -225,7 +225,7 @@ I>Odb97h7Z`mC03SLz6NfB0
 R4
 S1
 R0
-R24
+R20
 R25
 R26
 !i122 3
@@ -234,7 +234,7 @@ R8
 r1
 !s85 0
 31
-R9
+R17
 R27
 R28
 !i113 1
