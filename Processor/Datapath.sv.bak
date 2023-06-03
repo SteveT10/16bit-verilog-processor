@@ -1,0 +1,38 @@
+/*
+Steven Tieu
+TCES 380 Project, Datapath unit
+Assembles ALU, Mux, RegFIle and a LPM 1 Port 1 into Datapath unit.
+
+Overflow and underflow allowed to occur in ALU.
+
+ */
+module Datapath(ALU_s0, D_addr, Clk, A_ReadAddr, D_wr, RF_sel, WriteAddr, B_ReadAddr, RF_W_en);
+	
+	input Clk;
+	input D_wr, RF_sel, RF_W_en;
+	input [7:0] D_addr;
+	input [3:0] RF_W_addr, read_A_Addr, read_B_Addr;
+	input [2:0] ALU_s0;
+
+	/*regfile16x16a
+	(input clk,
+	 input write,
+	 input [3:0] wrAddr,
+	 input [15:0] wrData,
+	 input [3:0] rdAddrA,
+	 output logic [15:0] rdDataA,
+	 input [3:0] rdAddrB,
+	 output logic [15:0] rdDataB );*/
+
+	//Mux_16w_2to1(Sel, A, B, M);
+
+	//DataMemory()
+
+	//ALU(SelectFunc, A, B, Q); 
+
+	
+
+	output ALU_A_in, ALU_B_in, ALUOut;
+	
+
+endmodule

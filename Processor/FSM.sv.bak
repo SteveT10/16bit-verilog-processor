@@ -12,11 +12,10 @@ module FSM(IR,
 				ALU_s0,
 				outputCurrentState,
 				outputNextState,
-				clk,
-				Reset);
+				clk);
 
 	input [15:0] IR;
-	input clk, Reset;
+	input clk;
 	output logic [7:0] D_addr;
 	output logic [3:0] RF_W_addr, RF_Ra_addr, RF_Rb_addr;
 	output logic PC_clr, IR_Id, PC_up, D_wr, RF_s, RF_W_en;
@@ -58,15 +57,18 @@ module FSM(IR,
 				else if(IR[15:12] == 4'b0011) nextState = ADD;
 				else if(IR[15:12] == 4'b0100) nextState = SUB;
 				else nextState = NOOP;
+				PC_up = 1'b1; 
 			end
 			NOOP: begin
 				nextState = Fetch;
+				PC_up = 1'b1; 
 			end
 			LOAD_A: begin
 				D_addr = IR[11:4];
 				RF_s = 1'b1;
 				RF_W_addr = IR[3:0];
 				nextState = LOAD_B;
+				PC_up = 1'b1; 
 			end
 			LOAD_B: begin
 				D_addr = IR[11:4];
@@ -74,12 +76,14 @@ module FSM(IR,
 				RF_W_addr = IR[3:0];
 				RF_W_en = 1'b1;
 				nextState = Fetch;
+				PC_up = 1'b1; 
 			end
 			STORE: begin
 				D_addr = IR[7:0];
 				D_wr = 1'b1;
 				RF_Ra_addr = IR[11:8];
 				nextState = Fetch;
+				PC_up = 1'b1; 
 			end
 			ADD: begin
 				RF_W_addr = IR[3:0];
@@ -89,6 +93,7 @@ module FSM(IR,
 				ALU_s0 = 3'b001;
 				RF_s = 1'b0;
 				nextState = Fetch;
+				PC_up = 1'b1; 
 			end
 			SUB: begin
 				RF_W_addr = IR[3:0];
@@ -98,6 +103,7 @@ module FSM(IR,
 				ALU_s0 = 3'b010;
 				RF_s = 1'b0;
 				nextState = Fetch;
+				PC_up = 1'b1; 
 			end
 			HALT: begin
 				nextState = HALT;
@@ -107,8 +113,7 @@ module FSM(IR,
 	end
 		
 	always_ff @(posedge clk) begin
-		if(!Reset) currentState <= Init;
-		else currentState <= nextState;
+		currentState <= nextState;
 	end
 
 endmodule

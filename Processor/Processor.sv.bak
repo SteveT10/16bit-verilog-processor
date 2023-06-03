@@ -1,8 +1,8 @@
 module Processor(Clk, Reset, IR_Out, PC_Out, State, nextState, ALU_A, ALU_B, ALU_Out);
 	input Clk, Reset;
-	output [15:0] IR_Out, ALU_A, ALU_B, ALU_Out;
-	output [6:0] PC_Out;
-	output [3:0] State, nextState;
+	output logic [15:0] IR_Out, ALU_A, ALU_B, ALU_Out;
+	output logic [6:0] PC_Out;
+	output logic [3:0] State, nextState;
 	logic [2:0] ALU_s0;
 	logic [7:0] D_Addr;
 	logic D_Wr, RF_W_en, RF_s;
