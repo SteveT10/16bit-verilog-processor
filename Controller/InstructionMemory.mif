@@ -22,7 +22,14 @@ ADDRESS_RADIX=UNS;
 DATA_RADIX=HEX;
 
 CONTENT BEGIN
-	[0..26]  :   0000;
+	0    :   3ABC;
+	1    :   4ABC;
+	2    :   2ABC;
+	3    :   1ABC;
+	4    :   0ABC;
+	5    :   5ABC;
+	6    :   1ABC;
+	[7..26]  :   0000;
 	27   :   21BA;
 	[28..41]  :   0000;
 	42   :   A04E;

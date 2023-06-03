@@ -1,0 +1,159 @@
+# Reading pref.tcl
+# OpenFile C:/Users/Steven/Documents/GitHub/TCES330_Project/Program_Counter/PC.sv
+runPC.do
+# couldn't execute ".\runPC.do": no such file or directory
+do runPC.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:55:09 on Jun 02,2023
+# vlog -reportprogress 300 ./PC.sv 
+# -- Compiling module PC
+# -- Compiling module PC_tb
+# 
+# Top level modules:
+# 	PC_tb
+# End time: 16:55:09 on Jun 02,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work PC_tb 
+# Start time: 16:55:09 on Jun 02,2023
+# Loading sv_std.std
+# Loading work.PC_tb
+# Loading work.PC
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+#                    0  Clr = 1 	 En/Up = 1 	 addr = xxxxxxx
+#                   10  Clr = 1 	 En/Up = 1 	 addr = 0000000
+#                   20  Clr = 0 	 En/Up = 1 	 addr = 0000000
+#                   30  Clr = 0 	 En/Up = 1 	 addr = 0000001
+#                   50  Clr = 0 	 En/Up = 1 	 addr = 0000010
+#                   70  Clr = 0 	 En/Up = 1 	 addr = 0000011
+#                   90  Clr = 0 	 En/Up = 1 	 addr = 0000100
+#                  110  Clr = 0 	 En/Up = 1 	 addr = 0000101
+#                  130  Clr = 0 	 En/Up = 1 	 addr = 0000110
+#                  150  Clr = 0 	 En/Up = 1 	 addr = 0000111
+#                  170  Clr = 0 	 En/Up = 1 	 addr = 0001000
+#                  190  Clr = 0 	 En/Up = 1 	 addr = 0001001
+#                  210  Clr = 0 	 En/Up = 1 	 addr = 0001010
+#                  230  Clr = 0 	 En/Up = 1 	 addr = 0001011
+#                  250  Clr = 0 	 En/Up = 1 	 addr = 0001100
+#                  270  Clr = 0 	 En/Up = 1 	 addr = 0001101
+#                  290  Clr = 0 	 En/Up = 1 	 addr = 0001110
+#                  310  Clr = 0 	 En/Up = 1 	 addr = 0001111
+#                  330  Clr = 0 	 En/Up = 1 	 addr = 0010000
+#                  350  Clr = 0 	 En/Up = 1 	 addr = 0010001
+#                  370  Clr = 0 	 En/Up = 1 	 addr = 0010010
+#                  390  Clr = 0 	 En/Up = 1 	 addr = 0010011
+#                  410  Clr = 0 	 En/Up = 1 	 addr = 0010100
+#                  430  Clr = 0 	 En/Up = 1 	 addr = 0010101
+#                  450  Clr = 0 	 En/Up = 1 	 addr = 0010110
+#                  470  Clr = 0 	 En/Up = 1 	 addr = 0010111
+#                  490  Clr = 0 	 En/Up = 1 	 addr = 0011000
+#                  510  Clr = 0 	 En/Up = 1 	 addr = 0011001
+#                  530  Clr = 0 	 En/Up = 1 	 addr = 0011010
+#                  550  Clr = 0 	 En/Up = 1 	 addr = 0011011
+#                  570  Clr = 0 	 En/Up = 1 	 addr = 0011100
+#                  590  Clr = 0 	 En/Up = 1 	 addr = 0011101
+#                  610  Clr = 0 	 En/Up = 1 	 addr = 0011110
+#                  630  Clr = 0 	 En/Up = 1 	 addr = 0011111
+#                  650  Clr = 0 	 En/Up = 1 	 addr = 0100000
+#                  670  Clr = 0 	 En/Up = 1 	 addr = 0100001
+#                  690  Clr = 0 	 En/Up = 1 	 addr = 0100010
+#                  710  Clr = 0 	 En/Up = 1 	 addr = 0100011
+#                  730  Clr = 0 	 En/Up = 1 	 addr = 0100100
+#                  750  Clr = 0 	 En/Up = 1 	 addr = 0100101
+#                  770  Clr = 0 	 En/Up = 1 	 addr = 0100110
+#                  790  Clr = 0 	 En/Up = 1 	 addr = 0100111
+#                  810  Clr = 0 	 En/Up = 1 	 addr = 0101000
+#                  830  Clr = 0 	 En/Up = 1 	 addr = 0101001
+#                  850  Clr = 0 	 En/Up = 1 	 addr = 0101010
+#                  870  Clr = 0 	 En/Up = 1 	 addr = 0101011
+#                  890  Clr = 0 	 En/Up = 1 	 addr = 0101100
+#                  910  Clr = 0 	 En/Up = 1 	 addr = 0101101
+#                  930  Clr = 0 	 En/Up = 1 	 addr = 0101110
+#                  950  Clr = 0 	 En/Up = 1 	 addr = 0101111
+#                  970  Clr = 0 	 En/Up = 1 	 addr = 0110000
+#                  990  Clr = 0 	 En/Up = 1 	 addr = 0110001
+#                 1010  Clr = 0 	 En/Up = 1 	 addr = 0110010
+#                 1030  Clr = 0 	 En/Up = 1 	 addr = 0110011
+#                 1050  Clr = 0 	 En/Up = 1 	 addr = 0110100
+#                 1070  Clr = 0 	 En/Up = 1 	 addr = 0110101
+#                 1090  Clr = 0 	 En/Up = 1 	 addr = 0110110
+#                 1110  Clr = 0 	 En/Up = 1 	 addr = 0110111
+#                 1130  Clr = 0 	 En/Up = 1 	 addr = 0111000
+#                 1150  Clr = 0 	 En/Up = 1 	 addr = 0111001
+#                 1170  Clr = 0 	 En/Up = 1 	 addr = 0111010
+#                 1190  Clr = 0 	 En/Up = 1 	 addr = 0111011
+#                 1210  Clr = 0 	 En/Up = 1 	 addr = 0111100
+#                 1230  Clr = 0 	 En/Up = 1 	 addr = 0111101
+#                 1250  Clr = 0 	 En/Up = 1 	 addr = 0111110
+#                 1270  Clr = 0 	 En/Up = 1 	 addr = 0111111
+#                 1290  Clr = 0 	 En/Up = 1 	 addr = 1000000
+#                 1310  Clr = 0 	 En/Up = 1 	 addr = 1000001
+#                 1330  Clr = 0 	 En/Up = 1 	 addr = 1000010
+#                 1350  Clr = 0 	 En/Up = 1 	 addr = 1000011
+#                 1370  Clr = 0 	 En/Up = 1 	 addr = 1000100
+#                 1390  Clr = 0 	 En/Up = 1 	 addr = 1000101
+#                 1410  Clr = 0 	 En/Up = 1 	 addr = 1000110
+#                 1430  Clr = 0 	 En/Up = 1 	 addr = 1000111
+#                 1450  Clr = 0 	 En/Up = 1 	 addr = 1001000
+#                 1470  Clr = 0 	 En/Up = 1 	 addr = 1001001
+#                 1490  Clr = 0 	 En/Up = 1 	 addr = 1001010
+#                 1510  Clr = 0 	 En/Up = 1 	 addr = 1001011
+#                 1530  Clr = 0 	 En/Up = 1 	 addr = 1001100
+#                 1550  Clr = 0 	 En/Up = 1 	 addr = 1001101
+#                 1570  Clr = 0 	 En/Up = 1 	 addr = 1001110
+#                 1590  Clr = 0 	 En/Up = 1 	 addr = 1001111
+#                 1610  Clr = 0 	 En/Up = 1 	 addr = 1010000
+#                 1630  Clr = 0 	 En/Up = 1 	 addr = 1010001
+#                 1650  Clr = 0 	 En/Up = 1 	 addr = 1010010
+#                 1670  Clr = 0 	 En/Up = 1 	 addr = 1010011
+#                 1690  Clr = 0 	 En/Up = 1 	 addr = 1010100
+#                 1710  Clr = 0 	 En/Up = 1 	 addr = 1010101
+#                 1730  Clr = 0 	 En/Up = 1 	 addr = 1010110
+#                 1750  Clr = 0 	 En/Up = 1 	 addr = 1010111
+#                 1770  Clr = 0 	 En/Up = 1 	 addr = 1011000
+#                 1790  Clr = 0 	 En/Up = 1 	 addr = 1011001
+#                 1810  Clr = 0 	 En/Up = 1 	 addr = 1011010
+#                 1830  Clr = 0 	 En/Up = 1 	 addr = 1011011
+#                 1850  Clr = 0 	 En/Up = 1 	 addr = 1011100
+#                 1870  Clr = 0 	 En/Up = 1 	 addr = 1011101
+#                 1890  Clr = 0 	 En/Up = 1 	 addr = 1011110
+#                 1910  Clr = 0 	 En/Up = 1 	 addr = 1011111
+#                 1930  Clr = 0 	 En/Up = 1 	 addr = 1100000
+#                 1950  Clr = 0 	 En/Up = 1 	 addr = 1100001
+#                 1970  Clr = 0 	 En/Up = 1 	 addr = 1100010
+#                 1990  Clr = 0 	 En/Up = 1 	 addr = 1100011
+#                 2010  Clr = 0 	 En/Up = 1 	 addr = 1100100
+#                 2030  Clr = 0 	 En/Up = 1 	 addr = 1100101
+#                 2050  Clr = 0 	 En/Up = 1 	 addr = 1100110
+#                 2070  Clr = 0 	 En/Up = 1 	 addr = 1100111
+#                 2090  Clr = 0 	 En/Up = 1 	 addr = 1101000
+#                 2110  Clr = 0 	 En/Up = 1 	 addr = 1101001
+#                 2130  Clr = 0 	 En/Up = 1 	 addr = 1101010
+#                 2150  Clr = 0 	 En/Up = 1 	 addr = 1101011
+#                 2170  Clr = 0 	 En/Up = 1 	 addr = 1101100
+#                 2190  Clr = 0 	 En/Up = 1 	 addr = 1101101
+#                 2210  Clr = 0 	 En/Up = 1 	 addr = 1101110
+#                 2230  Clr = 0 	 En/Up = 1 	 addr = 1101111
+#                 2250  Clr = 0 	 En/Up = 1 	 addr = 1110000
+#                 2270  Clr = 0 	 En/Up = 1 	 addr = 1110001
+#                 2290  Clr = 0 	 En/Up = 1 	 addr = 1110010
+#                 2310  Clr = 0 	 En/Up = 1 	 addr = 1110011
+#                 2330  Clr = 0 	 En/Up = 1 	 addr = 1110100
+#                 2350  Clr = 0 	 En/Up = 1 	 addr = 1110101
+#                 2370  Clr = 0 	 En/Up = 1 	 addr = 1110110
+#                 2390  Clr = 0 	 En/Up = 1 	 addr = 1110111
+#                 2410  Clr = 0 	 En/Up = 1 	 addr = 1111000
+#                 2430  Clr = 0 	 En/Up = 1 	 addr = 1111001
+#                 2450  Clr = 0 	 En/Up = 1 	 addr = 1111010
+#                 2470  Clr = 0 	 En/Up = 1 	 addr = 1111011
+#                 2490  Clr = 0 	 En/Up = 1 	 addr = 1111100
+#                 2510  Clr = 0 	 En/Up = 1 	 addr = 1111101
+#                 2530  Clr = 0 	 En/Up = 1 	 addr = 1111110
+#                 2550  Clr = 0 	 En/Up = 1 	 addr = 1111111
+# ** Note: $stop    : ./PC.sv(46)
+#    Time: 2560 ns  Iteration: 0  Instance: /PC_tb
+# Break in Module PC_tb at ./PC.sv line 46
+# End time: 17:22:59 on Jun 02,2023, Elapsed time: 0:27:50
+# Errors: 0, Warnings: 0
