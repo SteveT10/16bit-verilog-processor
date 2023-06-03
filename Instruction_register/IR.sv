@@ -15,12 +15,11 @@ module IR(Clk, inData, outData, Id);
 	//Based on Lab 5 Part 2 flip-flop.
 	always_ff @(posedge Clk) begin
 		if(Id) outData <= inData;
-		else outData <= outData; 
+		// else outData <= outData; Not necessary
 	end
 
 endmodule
 
-`timescale 1ns/1ns
 module IR_tb;
 	
 	logic [15:0] inData, outData;

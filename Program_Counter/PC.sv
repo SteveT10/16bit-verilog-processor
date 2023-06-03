@@ -11,10 +11,10 @@ module PC(Clk, Clr, Up, Addr);
 	input Up;//up signals to go to next instruction, basically up = Enable.
 	output logic [6:0] Addr; //Next address to do.
 
-	always_ff @(posedge Clk) begin
-		if(Up & Clr) Addr <= 7'd0; //Clr is on
-		else if (Up & Addr < 7'b1111111) Addr <= Addr + 1'b1; //Increment
-		else Addr <= Addr; //if(!Up), 
+	always_ff @(posedge Clk) begin //Inferred latch is fine in always_ff
+		if(Clr) Addr <= 7'd0; //Clr is on
+		else if(Up) Addr <= Addr + 1'b1; //Increment
+		// else Addr <= Addr; //if(!Up), NOTE TO SELF: may cause quartus errors. 
 		//also once we reach max instructions, just repeat the last one.
 	end
 	

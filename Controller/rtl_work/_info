@@ -1,232 +1,243 @@
 m255
 K4
 z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
 13
 !s112 1.1
 !i10d 8192
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/ea-co/OneDrive/Documents/GitHub/TCES330_Project/Controller
+Z0 dC:/Users/Steven/Documents/GitHub/TCES330_Project/Controller
 vControlUnit
-Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-Z2 !s110 1685680082
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z2 !s110 1685753470
 !i10b 1
-!s100 aa=M9G8Tk8giZ`UX<kO4G1
-IAJ;037md=^4iNh>;[m2110
-Z3 VDg1SIo80bB@j0V0VzS_@n1
-Z4 !s105 ControlUnit_sv_unit
+!s100 hRVJcUhX]7[nV<J50aWPb1
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I90=lWWFn]hRCHDAHQXmCI2
+Z4 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
-Z5 w1685680080
+Z5 w1685753464
 Z6 8./ControlUnit.sv
 Z7 F./ControlUnit.sv
-L0 1
-Z8 OV;L;10.5b;63
+!i122 4
+L0 1 35
+Z8 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z9 !s108 1685680082.000000
-Z10 !s107 ./ControlUnit.sv|
-Z11 !s90 -reportprogress|300|-work|work|+acc|./ControlUnit.sv|
+Z9 !s108 1685753470.000000
+!s107 ./ControlUnit.sv|
+Z10 !s90 -reportprogress|300|-work|work|+acc|./ControlUnit.sv|
 !i113 1
-Z12 o-work work +acc
-Z13 tCvgOpt 0
+Z11 o-work work +acc
+Z12 tCvgOpt 0
 n@control@unit
 vControlUnit_tb
 R1
 R2
 !i10b 1
-!s100 h1cWf0ThkQK<FA^I?TFEb1
-IcJC5YZ_WfR:4;;f1kEUOe3
+!s100 BG]fLfE`M_TcikX7m>UA10
 R3
+ISVZlE]?4PHU5m<]h04>AU2
 R4
 S1
 R0
 R5
 R6
 R7
-Z14 L0 40
+!i122 4
+L0 38 67
 R8
 r1
 !s85 0
 31
 R9
+Z13 !s107 ./ControlUnit.sv|
 R10
-R11
 !i113 1
+R11
 R12
-R13
 n@control@unit_tb
 vFSM
 R1
 R2
 !i10b 1
-!s100 ?IIfD;Sfi]MB5=790WAGC3
-IRjj4EiS6_?5B?Zz7N7J3M1
+!s100 C5>moaY>ngEQ^R1UVCb3T1
 R3
-Z15 !s105 FSM_sv_unit
+I2F0INE:i<CcnQeO?lQGm93
+R4
 S1
 R0
-Z16 w1685679779
-Z17 8./FSM.sv
-Z18 F./FSM.sv
-L0 1
+Z14 w1685733899
+Z15 8./FSM.sv
+Z16 F./FSM.sv
+!i122 2
+L0 1 114
 R8
 r1
 !s85 0
 31
-R9
-Z19 !s107 ./FSM.sv|
-Z20 !s90 -reportprogress|300|-work|work|+acc|./FSM.sv|
+Z17 !s108 1685753469.000000
+Z18 !s107 ./FSM.sv|
+Z19 !s90 -reportprogress|300|-work|work|+acc|./FSM.sv|
 !i113 1
+R11
 R12
-R13
 n@f@s@m
 vFSM_tb
 R1
 R2
 !i10b 1
-!s100 h91dRiTnmK`Ua:YT2c<IW0
-Iif17c23ViIF5V`L^O<DDh2
+!s100 Jb58Ed4RNALEgdOhY9X9E1
 R3
-R15
+I@nQk0;_iT<@W]CzM`:Y`N2
+R4
 S1
 R0
+R14
+R15
 R16
+!i122 2
+L0 118 74
+R8
+r1
+!s85 0
+31
 R17
 R18
-L0 123
-R8
-r1
-!s85 0
-31
-R9
 R19
-R20
 !i113 1
+R11
 R12
-R13
 n@f@s@m_tb
 vInstructionMemory
-R2
+Z20 !s110 1685753469
 !i10b 1
-!s100 25gUffA0_PD]f8iJQk7N[2
-I2IUA=UlPO;OL10[S0:IFN1
+!s100 >>G4LIS1<NJ4c7Re_XEnR1
 R3
+I`Jjf_e1L=@GS=gizb]Qk<0
+R4
 R0
-w1685483632
+w1685674702
 8./InstructionMemory.v
 F./InstructionMemory.v
-R14
+!i122 0
+L0 40 61
 R8
 r1
 !s85 0
 31
-R9
+R17
 !s107 ./InstructionMemory.v|
 !s90 -reportprogress|300|-work|work|+acc|./InstructionMemory.v|
 !i113 1
+R11
 R12
-R13
 n@instruction@memory
 vIR
 R1
-R2
+R20
 !i10b 1
-!s100 JjFRiL:E>5bcn<LCGMCJP0
-IB5Tn_]@>jT5NcF5]0nj2N2
+!s100 5?@9`6ITg3No2Wb45`7aj0
 R3
-Z21 !s105 IR_sv_unit
+IgGF<O6VaVM`HJ_iH0JC293
+R4
 S1
 R0
-Z22 w1685677943
-Z23 8./IR.sv
-Z24 F./IR.sv
-L0 9
+Z21 w1685741747
+Z22 8./IR.sv
+Z23 F./IR.sv
+!i122 1
+L0 9 13
 R8
 r1
 !s85 0
 31
-R9
-Z25 !s107 ./IR.sv|
-Z26 !s90 -reportprogress|300|-work|work|+acc|./IR.sv|
+R17
+Z24 !s107 ./IR.sv|
+Z25 !s90 -reportprogress|300|-work|work|+acc|./IR.sv|
 !i113 1
+R11
 R12
-R13
 n@i@r
 vIR_tb
 R1
-R2
+R20
 !i10b 1
-!s100 jbb_;MXVOSk<89dAFn:0<2
-IAAkJ2<P6a_e[I8i5X=P`l0
+!s100 m>2OHbEZOBlehoT1<0f:M0
 R3
-R21
+IeXF2dj2hNT9dmV=:Ye<if2
+R4
 S1
 R0
+R21
 R22
 R23
-R24
-Z27 L0 24
+!i122 1
+L0 23 33
 R8
 r1
 !s85 0
 31
-R9
+R17
+R24
 R25
-R26
 !i113 1
+R11
 R12
-R13
 n@i@r_tb
 vPC
 R1
 R2
 !i10b 1
-!s100 ;8;8`_EM8]LM]a3VmJL]k3
-IHnbS9nd2Q_cT]ldYGSgUM3
+!s100 bWcfoCA<FzbQAm_?:?A:H3
 R3
-Z28 !s105 PC_sv_unit
+I6U8n5k6Q2zLAI[PYZldeG1
+R4
 S1
 R0
-Z29 w1685659294
-Z30 8./PC.sv
-Z31 F./PC.sv
-L0 8
+Z26 w1685741742
+Z27 8./PC.sv
+Z28 F./PC.sv
+!i122 3
+L0 8 14
 R8
 r1
 !s85 0
 31
 R9
-Z32 !s107 ./PC.sv|
-Z33 !s90 -reportprogress|300|-work|work|+acc|./PC.sv|
+Z29 !s107 ./PC.sv|
+Z30 !s90 -reportprogress|300|-work|work|+acc|./PC.sv|
 !i113 1
+R11
 R12
-R13
 n@p@c
 vPC_tb
 R1
 R2
 !i10b 1
-!s100 L3Oke_]D[AV8MG;NdnMD70
-IgzUKDB7H6oWdVz6G8khZ:3
+!s100 zIghCh`@ha6mT7MDZ?XZm1
 R3
-R28
+I>Odb97h7Z`mC03SLz6NfB0
+R4
 S1
 R0
-R29
-R30
-R31
+R26
 R27
+R28
+!i122 3
+L0 24 27
 R8
 r1
 !s85 0
 31
 R9
-R32
-R33
+R29
+R30
 !i113 1
+R11
 R12
-R13
 n@p@c_tb

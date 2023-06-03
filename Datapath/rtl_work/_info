@@ -8,10 +8,10 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/steve/OneDrive/Documents/GitHub/TCES330_Project/TCES330_Project/Datapath
+Z0 dC:/Users/Steven/Documents/GitHub/TCES330_Project/Datapath
 vALU
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1685659350
+Z2 !s110 1685692287
 !i10b 1
 !s100 BiMRc:ZGiTB4=6b0BFBFY3
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -19,7 +19,7 @@ Iek=@f9><Ycol9JAAW`Djl2
 Z4 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
-Z5 w1684863891
+Z5 w1685591827
 Z6 8./ALU.sv
 Z7 F./ALU.sv
 !i122 3
@@ -28,7 +28,7 @@ Z8 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z9 !s108 1685659350.000000
+Z9 !s108 1685692287.000000
 Z10 !s107 ./ALU.sv|
 Z11 !s90 -reportprogress|300|-work|work|+acc|./ALU.sv|
 !i113 1
@@ -69,7 +69,7 @@ R3
 IC2Sb5A9alF9;=FQz10jUb3
 R4
 R0
-w1685487129
+R5
 8./DataMemory.v
 F./DataMemory.v
 !i122 4
@@ -87,15 +87,15 @@ R13
 n@data@memory
 vDatapath
 R1
-Z14 !s110 1685659349
+Z14 !s110 1685692286
 !i10b 1
-!s100 5f5ogNUPd8EhbbDJC1?C91
+!s100 [@FOV5nc6egMA]L:<WBmK1
 R3
-IAcNn<4ZOJ6XUDBWcPO4fZ0
+ITDLdWn4Z7:3L:>0H11WdA3
 R4
 S1
 R0
-Z15 w1685659337
+Z15 w1685692280
 Z16 8./Datapath.sv
 Z17 F./Datapath.sv
 !i122 0
@@ -104,7 +104,7 @@ R8
 r1
 !s85 0
 31
-Z18 !s108 1685659349.000000
+Z18 !s108 1685692286.000000
 Z19 !s107 ./Datapath.sv|
 Z20 !s90 -reportprogress|300|-work|work|+acc|./Datapath.sv|
 !i113 1
@@ -115,9 +115,9 @@ vDatapath_tb
 R1
 R14
 !i10b 1
-!s100 YALSlXdH[]22jd>eQ4b`=3
+!s100 Y6H^N@7zQ<k@cWDAkR0_K0
 R3
-IE;k<an849GBK`W>T^_lXY0
+IjJd3K8GJhfkaJWnm2[E?01
 R4
 S1
 R0
@@ -125,7 +125,7 @@ R15
 R16
 R17
 !i122 0
-L0 54 168
+L0 54 193
 R8
 r1
 !s85 0
@@ -147,7 +147,7 @@ I7[IHBS:UT<CTHno;S3GMA2
 R4
 S1
 R0
-Z21 w1685650445
+Z21 w1685674702
 Z22 8./Mux_16w_2to1.sv
 Z23 F./Mux_16w_2to1.sv
 !i122 1
@@ -193,17 +193,17 @@ vregfile16x16a
 R1
 R2
 !i10b 1
-!s100 X]Y=ZfcRa56zd:ZeF6ae02
+!s100 DElkU23ldo4]OJXXF8;_l2
 R3
-IJS[nO>S^1ZF^?;aB_n72C3
+IR33gmDTj?RESc9`z77fXT0
 R4
 S1
 R0
-Z26 w1685639903
+Z26 w1685689288
 Z27 8./regfile16x16a.sv
 Z28 F./regfile16x16a.sv
 !i122 2
-L0 1 23
+L0 8 26
 R8
 r1
 !s85 0
@@ -218,9 +218,9 @@ vregfile16x16a_tb
 R1
 R2
 !i10b 1
-!s100 l:<jW^D9_Xkii3ba>h2<h2
+!s100 ea8?l4@Ch;Oz?gn_a[AiW0
 R3
-IOFTeMY[L3daNCdiNT=84<3
+IQ6EO=I9OoI4blP?K=1YFU2
 R4
 S1
 R0
@@ -228,7 +228,7 @@ R26
 R27
 R28
 !i122 2
-L0 25 32
+L0 35 32
 R8
 r1
 !s85 0

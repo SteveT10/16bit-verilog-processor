@@ -2,13 +2,13 @@ onerror {resume}
 quietly WaveActivateNextPane {} 0
 add wave -noupdate /Datapath_tb/clk
 add wave -noupdate /Datapath_tb/IR
+add wave -noupdate /Datapath_tb/rdAddrA
+add wave -noupdate /Datapath_tb/rdAddrB
+add wave -noupdate /Datapath_tb/WriteAddr
 add wave -noupdate /Datapath_tb/D_addr
 add wave -noupdate /Datapath_tb/D_wr
 add wave -noupdate /Datapath_tb/RF_sel
-add wave -noupdate /Datapath_tb/WriteAddr
 add wave -noupdate /Datapath_tb/RF_W_en
-add wave -noupdate /Datapath_tb/rdAddrA
-add wave -noupdate /Datapath_tb/rdAddrB
 add wave -noupdate /Datapath_tb/ALU_s0
 add wave -noupdate /Datapath_tb/ALU_A_out
 add wave -noupdate /Datapath_tb/ALU_B_out

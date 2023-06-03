@@ -1,3 +1,10 @@
+/*
+Evan C., Steven Tieu
+TCES 380 Project, Reg File unit
+16 registers that contains 16 bit data
+.
+Based on TCES 372 Textbook example on verilog reg file..
+ */
 module regfile16x16a (clk, write, wrAddr, wrData, rdAddrA,
                       rdDataA, rdAddrB, rdDataB);
 
@@ -11,12 +18,15 @@ module regfile16x16a (clk, write, wrAddr, wrData, rdAddrA,
 	output logic [15:0] rdDataB;
 
 	logic [15:0] regfile [0:15];
+	always_comb begin : readData		
+		rdDataA = regfile[rdAddrA]; 
+		rdDataB = regfile[rdAddrB];
+	end
 	always_ff @(posedge clk) begin
 		if(write == 1) begin
 			regfile[wrAddr] <= wrData;
 		end else begin
-			rdDataA <= regfile[rdAddrA];
-			rdDataB <= regfile[rdAddrB];
+			regfile[wrAddr] <= regfile[wrAddr]; //Note: May cause quartus error.
 		end
 	end
 

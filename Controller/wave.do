@@ -2,6 +2,7 @@ onerror {resume}
 quietly WaveActivateNextPane {} 0
 add wave -noupdate /ControlUnit_tb/Clk
 add wave -noupdate /ControlUnit_tb/Reset
+add wave -noupdate /ControlUnit_tb/DUT.q
 add wave -noupdate /ControlUnit_tb/D_Wr
 add wave -noupdate /ControlUnit_tb/RF_W_en
 add wave -noupdate /ControlUnit_tb/RF_s

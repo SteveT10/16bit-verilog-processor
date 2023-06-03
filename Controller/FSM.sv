@@ -12,10 +12,11 @@ module FSM(IR,
 				ALU_s0,
 				outputCurrentState,
 				outputNextState,
-				clk);
+				clk,
+				Reset);
 
 	input [15:0] IR;
-	input clk;
+	input clk, Reset;
 	output logic [7:0] D_addr;
 	output logic [3:0] RF_W_addr, RF_Ra_addr, RF_Rb_addr;
 	output logic PC_clr, IR_Id, PC_up, D_wr, RF_s, RF_W_en;
@@ -106,7 +107,8 @@ module FSM(IR,
 	end
 		
 	always_ff @(posedge clk) begin
-		currentState <= nextState;
+		if(Reset) currentState <= Init;
+		else currentState <= nextState;
 	end
 
 endmodule

@@ -13,11 +13,10 @@ module IR(Clk, inData, outData, Id);
 	output logic [15:0] outData;
 	
 	//Based on Lab 5 Part 2 flip-flop.
-	always_ff @(posedge Clk, negedge Id) begin
-    		if (Id) begin
-      			outData <= inData;
-    end
-  end
+	always_ff @(posedge Clk) begin
+		if(Id) outData <= inData;
+		// else outData <= outData; Not necessary
+	end
 
 endmodule
 
