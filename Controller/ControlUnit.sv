@@ -9,10 +9,11 @@ module ControlUnit(Clk, Reset, ALU_s0, D_Addr, D_Wr, IR_Out, nextState, outState
 		output logic [2:0] ALU_s0;
 		output logic D_Wr, RF_W_en, RF_s;
 	
-		wire [15:0] q;
+		logic [15:0] q;
 		wire PCClr, PCUp, IRLd;
 
 		InstructionMemory ROM(.address(PC_Out), .clock(Clk), .q(q));
+		PC counter(.Clk(Clk), .Clr(PCClr), .Up(PCUp), .Addr(PC_Out));
 		IR instrucReg(.Clk(Clk), .inData(q), .outData(IR_Out), .Id(IRLd));
 		FSM controller(.IR(IR_Out),
 			        .PC_clr(PCClr),
@@ -29,7 +30,7 @@ module ControlUnit(Clk, Reset, ALU_s0, D_Addr, D_Wr, IR_Out, nextState, outState
 				.outputCurrentState(outState),
 				.outputNextState(nextState),
 				.clk(Clk));
-		PC counter(.Clk(Clk), .Clr(PCClr), .Up(PCUp), .Addr(PC_Out));
+		
 		
 	
 		

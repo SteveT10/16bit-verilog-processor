@@ -14,7 +14,7 @@ module IR(Clk, inData, outData, Id);
 	
 	//Based on Lab 5 Part 2 flip-flop.
 	always_ff @(posedge Clk, negedge Id) begin
-    		if (Id) begin
+    		if (Ld) begin
       			outData <= inData;
     end
   end
