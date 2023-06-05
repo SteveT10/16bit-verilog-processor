@@ -29,7 +29,6 @@ initial	// Test stimulus
     #10 Reset = 1;
     wait( IR_Out == 16'h5000 );  // halt instruction
     $display( "\nEnd of Simulation.\n" );
-	$display($time);
     $stop;
   end
   
