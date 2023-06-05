@@ -8,10 +8,10 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/Steven/Documents/GitHub/TCES330_Project/Datapath
+Z0 dC:/Users/steve/OneDrive/Documents/GitHub/TCES330_Project/TCES330_Project/Datapath
 vALU
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1685692287
+Z2 !s110 1685989827
 !i10b 1
 !s100 BiMRc:ZGiTB4=6b0BFBFY3
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -19,7 +19,7 @@ Iek=@f9><Ycol9JAAW`Djl2
 Z4 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
-Z5 w1685591827
+Z5 w1684863891
 Z6 8./ALU.sv
 Z7 F./ALU.sv
 !i122 3
@@ -28,7 +28,7 @@ Z8 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z9 !s108 1685692287.000000
+Z9 !s108 1685989827.000000
 Z10 !s107 ./ALU.sv|
 Z11 !s90 -reportprogress|300|-work|work|+acc|./ALU.sv|
 !i113 1
@@ -62,14 +62,14 @@ R12
 R13
 n@a@l@u_tb
 vDataMemory
-R2
+!s110 1685989828
 !i10b 1
 !s100 <RaojzVeg0096aGLTJWaA0
 R3
 IC2Sb5A9alF9;=FQz10jUb3
 R4
 R0
-R5
+w1685487129
 8./DataMemory.v
 F./DataMemory.v
 !i122 4
@@ -87,7 +87,7 @@ R13
 n@data@memory
 vDatapath
 R1
-Z14 !s110 1685692286
+Z14 !s110 1685989826
 !i10b 1
 !s100 [@FOV5nc6egMA]L:<WBmK1
 R3
@@ -95,7 +95,7 @@ ITDLdWn4Z7:3L:>0H11WdA3
 R4
 S1
 R0
-Z15 w1685692280
+Z15 w1685988498
 Z16 8./Datapath.sv
 Z17 F./Datapath.sv
 !i122 0
@@ -104,7 +104,7 @@ R8
 r1
 !s85 0
 31
-Z18 !s108 1685692286.000000
+Z18 !s108 1685989826.000000
 Z19 !s107 ./Datapath.sv|
 Z20 !s90 -reportprogress|300|-work|work|+acc|./Datapath.sv|
 !i113 1
@@ -139,7 +139,7 @@ R13
 n@datapath_tb
 vMux_16w_2to1
 R1
-R14
+R2
 !i10b 1
 !s100 6Lm]lL:gm>=BVITjN=YXS3
 R3
@@ -147,7 +147,7 @@ I7[IHBS:UT<CTHno;S3GMA2
 R4
 S1
 R0
-Z21 w1685674702
+Z21 w1685650445
 Z22 8./Mux_16w_2to1.sv
 Z23 F./Mux_16w_2to1.sv
 !i122 1
@@ -165,7 +165,7 @@ R13
 n@mux_16w_2to1
 vMux_16w_2to1_tb
 R1
-R14
+R2
 !i10b 1
 !s100 S9<M=L`dFBHDnf1SGF]5E2
 R3
@@ -199,9 +199,9 @@ IR33gmDTj?RESc9`z77fXT0
 R4
 S1
 R0
-Z26 w1685689288
-Z27 8./regfile16x16a.sv
-Z28 F./regfile16x16a.sv
+R15
+Z26 8./regfile16x16a.sv
+Z27 F./regfile16x16a.sv
 !i122 2
 L0 8 26
 R8
@@ -209,8 +209,8 @@ r1
 !s85 0
 31
 R9
-Z29 !s107 ./regfile16x16a.sv|
-Z30 !s90 -reportprogress|300|-work|work|+acc|./regfile16x16a.sv|
+Z28 !s107 ./regfile16x16a.sv|
+Z29 !s90 -reportprogress|300|-work|work|+acc|./regfile16x16a.sv|
 !i113 1
 R12
 R13
@@ -224,9 +224,9 @@ IQ6EO=I9OoI4blP?K=1YFU2
 R4
 S1
 R0
+R15
 R26
 R27
-R28
 !i122 2
 L0 35 32
 R8
@@ -234,8 +234,8 @@ r1
 !s85 0
 31
 R9
+R28
 R29
-R30
 !i113 1
 R12
 R13
