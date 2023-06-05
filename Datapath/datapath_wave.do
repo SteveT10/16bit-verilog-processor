@@ -11,7 +11,9 @@ add wave -noupdate /Datapath_tb/RF_sel
 add wave -noupdate /Datapath_tb/RF_W_en
 add wave -noupdate /Datapath_tb/ALU_s0
 add wave -noupdate /Datapath_tb/ALU_A_out
+add wave -noupdate /Datapath_tb/DUT.Ra_data
 add wave -noupdate /Datapath_tb/ALU_B_out
+add wave -noupdate /Datapath_tb/DUT.Rb_data
 add wave -noupdate /Datapath_tb/ALUout
 add wave -noupdate /Datapath_tb/DUT.Wr_Data
 add wave -noupdate /Datapath_tb/DUT.Data_to_Mux

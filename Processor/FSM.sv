@@ -107,7 +107,7 @@ module FSM(IR,
 	end
 		
 	always_ff @(posedge clk) begin
-		if(Reset) currentState <= Init;
+		if(!Reset) currentState <= Init;
 		else currentState <= nextState;
 	end
 
