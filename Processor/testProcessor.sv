@@ -29,12 +29,11 @@ initial	// Test stimulus
     #30 Reset = 1;
     wait( IR_Out == 16'h5000 );  // halt instruction
     $display( "\nEnd of Simulation.\n" );
-	$display($time);
     $stop;
   end
   
 initial begin
-    $monitor( "Time is %0t : Reset = %b   PC_Out = %h   IR_Out = %h  State = %h  ALU A = %h  ALU B = %h ALU Out = %h", $stime, Reset, PC_Out, IR_Out, State, ALU_A, ALU_B, ALU_Out );
+    $monitor( "Time is %0t : Reset = %b   PC_Out = %h   IR_Out = %h  State = %h  ALU A = %h  ALU B = %h ALU Out = %h  RA Address = %b", $stime, Reset, PC_Out, IR_Out, State, ALU_A, ALU_B, ALU_Out, DUT.RF_Ra_Addr);
    
 end
 
