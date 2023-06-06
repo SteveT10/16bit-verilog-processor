@@ -1,8 +1,8 @@
-module Processor(Clk, Reset, IR_Out, PC_Out, State, nextState, ALU_A, ALU_B, ALU_Out);
+module Processor(Clk, Reset, IR_Out, PC_Out, State, NextState, ALU_A, ALU_B, ALU_Out);
 	input Clk, Reset;
 	output logic [15:0] IR_Out, ALU_A, ALU_B, ALU_Out;
 	output logic [6:0] PC_Out;
-	output logic [3:0] State, nextState;
+	output logic [3:0] State, NextState;
 	logic [2:0] ALU_s0;
 	logic [7:0] D_Addr;
 	logic D_Wr, RF_W_en, RF_s;
@@ -12,7 +12,7 @@ module Processor(Clk, Reset, IR_Out, PC_Out, State, nextState, ALU_A, ALU_B, ALU
 		   PC_Out, RF_Ra_Addr, RF_Rb_Addr, RF_W_Addr, RF_W_en, RF_s);*/
 	ControlUnit controller(.Clk(Clk), .Reset(Reset), .ALU_s0(ALU_s0), 
 							.D_Addr(D_Addr), .D_Wr(D_Wr), .IR_Out(IR_Out), 
-							.nextState(nextState), .outState(State), .PC_Out(PC_Out),
+							.nextState(NextState), .outState(State), .PC_Out(PC_Out),
 							.RF_Ra_Addr(RF_Ra_Addr), .RF_Rb_Addr(RF_Rb_Addr), 
 							.RF_W_Addr(RF_W_Addr), .RF_W_en(RF_W_en), .RF_s(RF_s));
 
@@ -33,7 +33,7 @@ module Processor(Clk, Reset, IR_Out, PC_Out, State, nextState, ALU_A, ALU_B, ALU
 		LOAD D[7E] to RF[04] --> 16'h27E4 in ROM reg 3, 8'h7E = 8'd126
 		SUB RF[01] - RF[02] = RF[05] --> 16'h4125 in ROM reg 4
 		ADD RF[05] + RF[03] = RF[06] --> 16'h3536 in ROM reg 5
-		SUB RF[06] - RF[04] = RF[0A] --> 16'h464A in ROM reg 6
+		SUB RF[06] - RF[04] = RF[0A] --> 16'h464A in ROM reg A
 		STORE RF[0A] to D[6A] --> 16'h1A6A in ROM reg 7
 		HALT --> 16'h5xxx in ROM reg 8
 

@@ -87,8 +87,7 @@ module ControlUnit_tb;
 			Reset, ALU_s0, D_Addr, D_Wr, IR_Out, nextState, outState, PC_Out, RF_Ra_Addr, 
 			RF_Rb_Addr, RF_W_Addr, RF_W_en, RF_s);
 		Reset = 0;		//Test reset, Initial already set here.
-		@ ( posedge Clk ) 
-		#10 Reset = 1;
+		#31 Reset = 1;
 		#40;//2 clks to fetch, decode
 		#20; //Add
 		assert(outState == 4'h7 && nextState == 4'h1 && ALU_s0 == 3'b001 && RF_s == 1'b0 && 

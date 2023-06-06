@@ -11,7 +11,7 @@ cModel Technology
 Z0 dC:/Users/Steven/Documents/GitHub/TCES330_Project/Controller
 vControlUnit
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1686030940
+Z2 !s110 1686081275
 !i10b 1
 !s100 Bl314WEBcBmaLJHK5UJ^S3
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -19,7 +19,7 @@ ICQK8W[lP_2oaCS514M@Am2
 Z4 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
-Z5 w1686030845
+Z5 w1686081149
 Z6 8./ControlUnit.sv
 Z7 F./ControlUnit.sv
 !i122 4
@@ -28,7 +28,7 @@ Z8 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z9 !s108 1686030939.000000
+Z9 !s108 1686081275.000000
 !s107 ./ControlUnit.sv|
 Z10 !s90 -reportprogress|300|-work|work|+acc|./ControlUnit.sv|
 !i113 1
@@ -63,7 +63,7 @@ R12
 n@control@unit_tb
 vFSM
 R1
-Z14 !s110 1686030939
+Z14 !s110 1686081274
 !i10b 1
 !s100 SWig8`B?Bf:S9_:;OcTSD3
 R3
@@ -71,7 +71,7 @@ I_O9BUfCQS1LP0:Mm0PFS60
 R4
 S1
 R0
-Z15 w1686030921
+Z15 w1686031071
 Z16 8./FSM.sv
 Z17 F./FSM.sv
 !i122 2
@@ -80,9 +80,9 @@ R8
 r1
 !s85 0
 31
-R9
-Z18 !s107 ./FSM.sv|
-Z19 !s90 -reportprogress|300|-work|work|+acc|./FSM.sv|
+Z18 !s108 1686081274.000000
+Z19 !s107 ./FSM.sv|
+Z20 !s90 -reportprogress|300|-work|work|+acc|./FSM.sv|
 !i113 1
 R11
 R12
@@ -106,9 +106,9 @@ R8
 r1
 !s85 0
 31
-R9
 R18
 R19
+R20
 !i113 1
 R11
 R12
@@ -130,7 +130,7 @@ R8
 r1
 !s85 0
 31
-R9
+R18
 !s107 ./InstructionMemory.v|
 !s90 -reportprogress|300|-work|work|+acc|./InstructionMemory.v|
 !i113 1
@@ -147,18 +147,18 @@ IgGF<O6VaVM`HJ_iH0JC293
 R4
 S1
 R0
-Z20 w1685741747
-Z21 8./IR.sv
-Z22 F./IR.sv
+Z21 w1685741747
+Z22 8./IR.sv
+Z23 F./IR.sv
 !i122 1
 L0 9 13
 R8
 r1
 !s85 0
 31
-R9
-Z23 !s107 ./IR.sv|
-Z24 !s90 -reportprogress|300|-work|work|+acc|./IR.sv|
+R18
+Z24 !s107 ./IR.sv|
+Z25 !s90 -reportprogress|300|-work|work|+acc|./IR.sv|
 !i113 1
 R11
 R12
@@ -173,25 +173,25 @@ IeXF2dj2hNT9dmV=:Ye<if2
 R4
 S1
 R0
-R20
 R21
 R22
+R23
 !i122 1
 L0 23 33
 R8
 r1
 !s85 0
 31
-R9
-R23
+R18
 R24
+R25
 !i113 1
 R11
 R12
 n@i@r_tb
 vPC
 R1
-R14
+R2
 !i10b 1
 !s100 bWcfoCA<FzbQAm_?:?A:H3
 R3
@@ -199,25 +199,25 @@ I6U8n5k6Q2zLAI[PYZldeG1
 R4
 S1
 R0
-Z25 w1685741742
-Z26 8./PC.sv
-Z27 F./PC.sv
+Z26 w1686081269
+Z27 8./PC.sv
+Z28 F./PC.sv
 !i122 3
 L0 8 14
 R8
 r1
 !s85 0
 31
-R9
-Z28 !s107 ./PC.sv|
-Z29 !s90 -reportprogress|300|-work|work|+acc|./PC.sv|
+R18
+Z29 !s107 ./PC.sv|
+Z30 !s90 -reportprogress|300|-work|work|+acc|./PC.sv|
 !i113 1
 R11
 R12
 n@p@c
 vPC_tb
 R1
-R14
+R2
 !i10b 1
 !s100 zIghCh`@ha6mT7MDZ?XZm1
 R3
@@ -225,18 +225,18 @@ I>Odb97h7Z`mC03SLz6NfB0
 R4
 S1
 R0
-R25
 R26
 R27
+R28
 !i122 3
 L0 24 27
 R8
 r1
 !s85 0
 31
-R9
-R28
+R18
 R29
+R30
 !i113 1
 R11
 R12
