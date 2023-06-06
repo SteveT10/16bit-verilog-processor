@@ -26,7 +26,7 @@ initial	// Test stimulus
     $display( "\nBegin Simulation." );
     Reset = 0;         // reset for one clock
     @ ( posedge Clk ) 
-    #31 Reset = 1;
+    #30 Reset = 1;
     wait( IR_Out == 16'h5000 );  // halt instruction
     $display( "\nEnd of Simulation.\n" );
     $stop;
