@@ -69,17 +69,17 @@ Z5 w1685052960
 Z6 8./Controller.sv
 Z7 F./Controller.sv
 !i122 41
-Z8 L0 1 96
-Z9 VDg1SIo80bB@j0V0VzS_@n1
-Z10 OL;L;2021.2;73
+L0 1 96
+Z8 VDg1SIo80bB@j0V0VzS_@n1
+Z9 OL;L;2021.2;73
 r1
 !s85 0
 31
-Z11 !s108 1685052961.000000
-Z12 !s107 ./Controller.sv|
-Z13 !s90 -reportprogress|300|./Controller.sv|
+Z10 !s108 1685052961.000000
+Z11 !s107 ./Controller.sv|
+Z12 !s90 -reportprogress|300|./Controller.sv|
 !i113 0
-Z14 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z13 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 R2
 n@controller
 vController_tb
@@ -94,66 +94,66 @@ R5
 R6
 R7
 !i122 41
-Z15 L0 100 74
+L0 100 74
+R8
 R9
-R10
 r1
 !s85 0
 31
+R10
 R11
 R12
-R13
 !i113 0
-R14
+R13
 R2
 n@controller_tb
 vFSM
-Z16 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z17 !s110 1685468757
+Z14 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z15 !s110 1686027889
 !i10b 1
-!s100 CC7iL192:5`2WCLWj9zW>1
-Z18 !s11b Dg1SIo80bB@j0V0VzS_@n1
-Ib_1kgRWSBCRTajS?Bj2g31
-R9
-S1
-Z19 dC:/Users/steve/OneDrive/Documents/GitHub/TCES330_Project/TCES330_Project/FSM
-Z20 w1685468492
-Z21 8./FSM.sv
-Z22 F./FSM.sv
-!i122 42
+!s100 Q4m=[b5hWK2W[ZTl4U<DJ1
+Z16 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I`0DnZgml=PPmTzk>F0L232
 R8
-Z23 OV;L;2020.1;71
+S1
+Z17 dC:/Users/Steven/Documents/GitHub/TCES330_Project/FSM
+Z18 w1686027886
+Z19 8./FSM.sv
+Z20 F./FSM.sv
+!i122 89
+L0 1 116
+Z21 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z24 !s108 1685468757.000000
+Z22 !s108 1686027889.000000
 !s107 ./FSM.sv|
-Z25 !s90 -reportprogress|300|./FSM.sv|
+Z23 !s90 -reportprogress|300|./FSM.sv|
 !i113 1
 R2
 n@f@s@m
 vFSM_tb
-R16
-R17
+R14
+R15
 !i10b 1
-!s100 AQKm24?k2G]h<Y7k^dRiV3
-R18
-IPGnmQ0O4EgTmQ@H7jY]lV0
-R9
+!s100 7fD0L9C5bflUWNGA5=hP`1
+R16
+IG]zO:4VOL_YHzXHZOo>[k2
+R8
 S1
+R17
+R18
 R19
 R20
+!i122 89
+L0 120 144
 R21
-R22
-!i122 42
-R15
-R23
 r1
 !s85 0
 31
-R24
-Z26 !s107 ./FSM.sv|
-R25
+R22
+Z24 !s107 ./FSM.sv|
+R23
 !i113 1
 R2
 n@f@s@m_tb
