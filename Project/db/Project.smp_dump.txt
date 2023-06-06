@@ -1,0 +1,19 @@
+
+State Machine - |Project|Processor:process|ControlUnit:controller|FSM:controller|currentState
+Name currentState.SUB currentState.HALT currentState.ADD currentState.STORE currentState.LOAD_B currentState.LOAD_A currentState.NOOP currentState.Decode currentState.Fetch currentState.Init 
+currentState.Init 0 0 0 0 0 0 0 0 0 0 
+currentState.Fetch 0 0 0 0 0 0 0 0 1 1 
+currentState.Decode 0 0 0 0 0 0 0 1 0 1 
+currentState.NOOP 0 0 0 0 0 0 1 0 0 1 
+currentState.LOAD_A 0 0 0 0 0 1 0 0 0 1 
+currentState.LOAD_B 0 0 0 0 1 0 0 0 0 1 
+currentState.STORE 0 0 0 1 0 0 0 0 0 1 
+currentState.ADD 0 0 1 0 0 0 0 0 0 1 
+currentState.HALT 0 1 0 0 0 0 0 0 0 1 
+currentState.SUB 1 0 0 0 0 0 0 0 0 1 
+
+State Machine - |Project|ButtonSyncReg:button|State
+Name State.S_A State.S_C State.S_B 
+State.S_A 0 0 0 
+State.S_B 1 0 1 
+State.S_C 1 1 0 
