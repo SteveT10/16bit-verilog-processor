@@ -5,7 +5,7 @@ add wave -noupdate /testProcessor/Reset
 add wave -noupdate /testProcessor/IR_Out
 add wave -noupdate /testProcessor/PC_Out
 add wave -noupdate /testProcessor/State
-add wave -noupdate /testProcessor/nextState
+add wave -noupdate /testProcessor/NextState
 add wave -noupdate /testProcessor/ALU_A
 add wave -noupdate /testProcessor/ALU_B
 add wave -noupdate /testProcessor/ALU_Out
