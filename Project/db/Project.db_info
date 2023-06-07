@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 Quartus_Version = Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
 Version_Index = 553882880
 Creation_Time = Tue Jun  6 17:48:43 2023
@@ -7,3 +8,8 @@ Quartus_Version = Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Version_Index = 520278016
 Creation_Time = Tue Jun 06 14:20:45 2023
 >>>>>>> b6fab476257746cc951c477ea3cb88069c9f105c
+=======
+Quartus_Version = Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
+Version_Index = 553882880
+Creation_Time = Mon Jun  5 22:50:17 2023
+>>>>>>> parent of b6fab47 (Added SDC file for top-level project file.)

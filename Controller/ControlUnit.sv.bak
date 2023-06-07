@@ -91,7 +91,8 @@ module ControlUnit_tb;
 		Reset = 0; #40; //2 clks to fetch, decode
 =======
 		Reset = 0;		//Test reset, Initial already set here.
-		#31 Reset = 1;
+		@ ( posedge Clk ) 
+		#10 Reset = 1;
 		#40;//2 clks to fetch, decode
 >>>>>>> b6fab476257746cc951c477ea3cb88069c9f105c
 		#20; //Add
