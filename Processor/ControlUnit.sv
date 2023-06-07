@@ -68,7 +68,7 @@ module ControlUnit_tb;
 			"Reset: %b | OUTPUT SIGNALS: ALU Sel: %b | D_Addr: %b | D_wr: %b | IR_Out: %b | nextState: %b | outState: %b | PC_Out: %b | RF_Ra_Addr: %b | RF_Rb_Addr: %b | RF_W_Addr: %b | RF_W_en: %b | RF_s: %b",
 			Reset, ALU_s0, D_Addr, D_Wr, IR_Out, nextState, outState, PC_Out, RF_Ra_Addr, 
 			RF_Rb_Addr, RF_W_Addr, RF_W_en, RF_s);
-		Reset = 1; #31; //Test reset, Initial already set here.
+		Reset = 1; #11; //Test reset, Initial already set here.
 		Reset = 0; #40; //2 clks to fetch, decode
 		#20; //Add
 		assert(outState == 4'h7 && nextState == 4'h1 && ALU_s0 == 3'b001 && RF_s == 1'b0 && 

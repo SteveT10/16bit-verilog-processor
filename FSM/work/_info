@@ -108,6 +108,7 @@ R13
 R2
 n@controller_tb
 vFSM
+<<<<<<< HEAD
 Z14 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
 Z15 !s110 1686100733
 !i10b 1
@@ -128,6 +129,29 @@ r1
 Z22 !s108 1686100733.000000
 Z23 !s107 ./FSM.sv|
 Z24 !s90 -reportprogress|300|./FSM.sv|
+=======
+Z14 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z15 !s110 1686027889
+!i10b 1
+!s100 Q4m=[b5hWK2W[ZTl4U<DJ1
+Z16 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I`0DnZgml=PPmTzk>F0L232
+R8
+S1
+Z17 dC:/Users/Steven/Documents/GitHub/TCES330_Project/FSM
+Z18 w1686027886
+Z19 8./FSM.sv
+Z20 F./FSM.sv
+!i122 89
+L0 1 116
+Z21 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z22 !s108 1686027889.000000
+!s107 ./FSM.sv|
+Z23 !s90 -reportprogress|300|./FSM.sv|
+>>>>>>> b6fab476257746cc951c477ea3cb88069c9f105c
 !i113 1
 R2
 n@f@s@m
@@ -135,23 +159,40 @@ vFSM_tb
 R14
 R15
 !i10b 1
+<<<<<<< HEAD
 !s100 nOnGJb<FVb_g?h2b`96Lm0
 IljO]iQfj`6oO7J;9OIl8U0
 R8
 R16
+=======
+!s100 7fD0L9C5bflUWNGA5=hP`1
+R16
+IG]zO:4VOL_YHzXHZOo>[k2
+R8
+>>>>>>> b6fab476257746cc951c477ea3cb88069c9f105c
 S1
 R17
 R18
 R19
 R20
+<<<<<<< HEAD
 L0 100
+=======
+!i122 89
+L0 120 144
+>>>>>>> b6fab476257746cc951c477ea3cb88069c9f105c
 R21
 r1
 !s85 0
 31
 R22
+<<<<<<< HEAD
 R23
 R24
+=======
+Z24 !s107 ./FSM.sv|
+R23
+>>>>>>> b6fab476257746cc951c477ea3cb88069c9f105c
 !i113 1
 R2
 n@f@s@m_tb

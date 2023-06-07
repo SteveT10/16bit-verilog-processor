@@ -1,6 +1,10 @@
 onerror {resume}
 quietly WaveActivateNextPane {} 0
+add wave -noupdate /FSM_tb/clk
+add wave -noupdate /FSM_tb/Reset
 add wave -noupdate /FSM_tb/IR
+add wave -noupdate /FSM_tb/currentState
+add wave -noupdate /FSM_tb/nextState
 add wave -noupdate /FSM_tb/PC_clr
 add wave -noupdate /FSM_tb/IR_Id
 add wave -noupdate /FSM_tb/PC_up
@@ -12,7 +16,6 @@ add wave -noupdate /FSM_tb/RF_W_en
 add wave -noupdate /FSM_tb/RF_Ra_addr
 add wave -noupdate /FSM_tb/RF_Rb_addr
 add wave -noupdate /FSM_tb/ALU_s0
-add wave -noupdate /FSM_tb/clk
 TreeUpdate [SetDefaultTree]
 WaveRestoreCursors {{Cursor 1} {0 ps} 0}
 quietly wave cursor active 0
