@@ -1,5 +1,5 @@
 Fitter report for Project
-Tue Jun  6 00:23:18 2023
+Tue Jun  6 17:49:12 2023
 Quartus Prime Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
 
 
@@ -73,7 +73,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Fitter Summary                                                                      ;
 +------------------------------------+------------------------------------------------+
-; Fitter Status                      ; Successful - Tue Jun  6 00:23:18 2023          ;
+; Fitter Status                      ; Successful - Tue Jun  6 17:49:12 2023          ;
 ; Quartus Prime Version              ; 22.1std.1 Build 917 02/14/2023 SC Lite Edition ;
 ; Revision Name                      ; Project                                        ;
 ; Top-level Entity Name              ; Project                                        ;
@@ -166,8 +166,8 @@ https://fpgasoftware.intel.com/eula.
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
 ;     Processor 2            ;   0.7%      ;
-;     Processor 3            ;   0.7%      ;
-;     Processor 4            ;   0.7%      ;
+;     Processor 3            ;   0.6%      ;
+;     Processor 4            ;   0.6%      ;
 ;     Processor 5            ;   0.6%      ;
 ;     Processor 6            ;   0.6%      ;
 ;     Processor 7            ;   0.6%      ;
@@ -3583,10 +3583,10 @@ Warning (169177): 1 pins must meet Intel FPGA requirements for 3.3-, 3.0-, and 2
     Info (169178): Pin CLOCK_50 uses I/O standard 3.3-V LVTTL at Y2 File: C:/Users/ea-co/OneDrive/Documents/GitHub/TCES330_Project/Project/Project.sv Line: 3
 Info (144001): Generated suppressed messages file C:/Users/ea-co/OneDrive/Documents/GitHub/TCES330_Project/Project/output_files/Project.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 469 warnings
-    Info: Peak virtual memory: 6773 megabytes
-    Info: Processing ended: Tue Jun  6 00:23:18 2023
-    Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:05
+    Info: Peak virtual memory: 6770 megabytes
+    Info: Processing ended: Tue Jun  6 17:49:13 2023
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:04
 
 
 +----------------------------+

@@ -80,7 +80,7 @@ module ControlUnit_tb;
 		#60; //Fetch, decode, Load
 		assert(outState == 4'h4 && nextState == 4'h5 && RF_s == 1'b1)
 		$display($time,,,,"LOAD A PASSED");
-		#20; //Another cycle needed to finish LOAD
+		#60; //Another cycle needed to finish LOAD
 		assert(outState == 4'h5 && nextState == 4'h1 && RF_s == 1'b1 && RF_W_en == 1'b1)
 		$display($time,,,,"LOAD B PASSED");
 		#60; //Fetch, decode, Store

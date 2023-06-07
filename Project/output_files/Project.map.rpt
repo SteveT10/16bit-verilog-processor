@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Project
-Tue Jun  6 00:23:11 2023
+Tue Jun  6 17:49:04 2023
 Quartus Prime Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
 
 
@@ -60,7 +60,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                        ;
 +------------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Jun  6 00:23:11 2023          ;
+; Analysis & Synthesis Status        ; Successful - Tue Jun  6 17:49:04 2023          ;
 ; Quartus Prime Version              ; 22.1std.1 Build 917 02/14/2023 SC Lite Edition ;
 ; Revision Name                      ; Project                                        ;
 ; Top-level Entity Name              ; Project                                        ;
@@ -702,7 +702,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
-    Info: Processing started: Tue Jun  6 00:23:00 2023
+    Info: Processing started: Tue Jun  6 17:48:52 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Project -c Project
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
@@ -856,7 +856,7 @@ Info (10041): Inferred latch for "out[14]" at Mux_16w_8_to_1.sv(5) File: C:/User
 Info (10041): Inferred latch for "out[15]" at Mux_16w_8_to_1.sv(5) File: C:/Users/ea-co/OneDrive/Documents/GitHub/TCES330_Project/Project/Mux_16w_8_to_1.sv Line: 5
 Info (12128): Elaborating entity "Decoder" for hierarchy "Decoder:hex0" File: C:/Users/ea-co/OneDrive/Documents/GitHub/TCES330_Project/Project/Project.sv Line: 31
 Info (11170): Starting IP generation for the debug fabric: alt_sld_fab.
-Info (11172): 2023.06.06.00:23:06 Progress: Loading slde1ef6cd0/alt_sld_fab_wrapper_hw.tcl
+Info (11172): 2023.06.06.17:48:58 Progress: Loading slde1ef6cd0/alt_sld_fab_wrapper_hw.tcl
 Info (11172): Alt_sld_fab.alt_sld_fab: SLD fabric agents which did not specify prefer_host were connected to JTAG
 Info (11172): Alt_sld_fab: Generating alt_sld_fab "alt_sld_fab" for QUARTUS_SYNTH
 Info (11172): Alt_sld_fab: "alt_sld_fab" instantiated alt_sld_fab "alt_sld_fab"
@@ -909,10 +909,10 @@ Info (21057): Implemented 1503 device resources after synthesis - the final reso
     Info (21061): Implemented 1398 logic cells
     Info (21064): Implemented 32 RAM segments
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 23 warnings
-    Info: Peak virtual memory: 4921 megabytes
-    Info: Processing ended: Tue Jun  6 00:23:11 2023
-    Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:10
+    Info: Peak virtual memory: 4922 megabytes
+    Info: Processing ended: Tue Jun  6 17:49:04 2023
+    Info: Elapsed time: 00:00:12
+    Info: Total CPU time (on all processors): 00:00:11
 
 
 +------------------------------------------+

@@ -10,7 +10,7 @@ cModel Technology
 Z0 dC:/Users/ea-co/OneDrive/Documents/GitHub/TCES330_Project/Controller
 vControlUnit
 Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-Z2 !s110 1685829577
+Z2 !s110 1686100902
 !i10b 1
 !s100 lMU]9i:Sf]C`[g`Z:bE<;1
 If5b3dR25dk?G]hM_B;Dc92
@@ -18,7 +18,7 @@ Z3 VDg1SIo80bB@j0V0VzS_@n1
 Z4 !s105 ControlUnit_sv_unit
 S1
 R0
-Z5 w1685829427
+Z5 w1686100899
 Z6 8./ControlUnit.sv
 Z7 F./ControlUnit.sv
 L0 1
@@ -26,7 +26,7 @@ Z8 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z9 !s108 1685829577.000000
+Z9 !s108 1686100902.000000
 Z10 !s107 ./ControlUnit.sv|
 Z11 !s90 -reportprogress|300|-work|work|+acc|./ControlUnit.sv|
 !i113 1
@@ -37,8 +37,8 @@ vControlUnit_tb
 R1
 R2
 !i10b 1
-!s100 oQ5A_gl`zCEAnjZB[CAn]3
-IilaQ0YM0M:7MlYKX_]ZcX3
+!s100 9Sa26fIi`[>NP;m:9EK1Y0
+IjPUe35nJPGD_a>6BQV7aW0
 R3
 R4
 S1
@@ -62,13 +62,13 @@ vFSM
 R1
 R2
 !i10b 1
-!s100 ma6A1[nGn2EcX>W>Z5iDF3
-IYc6KDMAT0:fekLV48HME>0
+!s100 lZm2H5VzLAWh0NzJd=m:Z1
+I24@eVdaW7bRFIG6dbk6QM1
 R3
 Z14 !s105 FSM_sv_unit
 S1
 R0
-Z15 w1685829393
+Z15 w1685832955
 Z16 8./FSM.sv
 Z17 F./FSM.sv
 L0 1
@@ -140,17 +140,17 @@ R3
 Z20 !s105 IR_sv_unit
 S1
 R0
-R5
-Z21 8./IR.sv
-Z22 F./IR.sv
+Z21 w1685829427
+Z22 8./IR.sv
+Z23 F./IR.sv
 L0 9
 R8
 r1
 !s85 0
 31
 R9
-Z23 !s107 ./IR.sv|
-Z24 !s90 -reportprogress|300|-work|work|+acc|./IR.sv|
+Z24 !s107 ./IR.sv|
+Z25 !s90 -reportprogress|300|-work|work|+acc|./IR.sv|
 !i113 1
 R12
 R13
@@ -165,17 +165,17 @@ R3
 R20
 S1
 R0
-R5
 R21
 R22
+R23
 L0 23
 R8
 r1
 !s85 0
 31
 R9
-R23
 R24
+R25
 !i113 1
 R12
 R13
@@ -187,20 +187,20 @@ R2
 !s100 o76Kf_j6zAPMhKVZ6kDGa1
 IU40^DS6g[4BgOKm>e9cTo3
 R3
-Z25 !s105 PC_sv_unit
+Z26 !s105 PC_sv_unit
 S1
 R0
-R15
-Z26 8./PC.sv
-Z27 F./PC.sv
+Z27 w1685829393
+Z28 8./PC.sv
+Z29 F./PC.sv
 L0 8
 R8
 r1
 !s85 0
 31
 R9
-Z28 !s107 ./PC.sv|
-Z29 !s90 -reportprogress|300|-work|work|+acc|./PC.sv|
+Z30 !s107 ./PC.sv|
+Z31 !s90 -reportprogress|300|-work|work|+acc|./PC.sv|
 !i113 1
 R12
 R13
@@ -212,20 +212,20 @@ R2
 !s100 L3Oke_]D[AV8MG;NdnMD70
 IgzUKDB7H6oWdVz6G8khZ:3
 R3
-R25
+R26
 S1
 R0
-R15
-R26
 R27
+R28
+R29
 L0 24
 R8
 r1
 !s85 0
 31
 R9
-R28
-R29
+R30
+R31
 !i113 1
 R12
 R13
