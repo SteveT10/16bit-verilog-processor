@@ -13,7 +13,7 @@ vmap work rtl_work
 # Compile Verilog
 #     All Verilog files that are part of this design should have
 #     their own "vlog" line below.
-vlog -work work +acc "./InstructionMemory.v"
+vlog -work work +acc "./InstMemory.v"
 vlog -work work +acc "./IR.sv"
 vlog -work work +acc "./FSM.sv"
 vlog -work work +acc "./PC.sv"

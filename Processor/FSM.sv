@@ -57,8 +57,8 @@ module FSM(IR,
 				else if(IR[15:12] == 4'b0001) nextState = STORE;
 				else if(IR[15:12] == 4'b0011) nextState = ADD;
 				else if(IR[15:12] == 4'b0100) nextState = SUB;
-				//else if(IR[15:12] == 4'b0000) nextState = NOOP;
-				else nextState = NOOP; //This is Reset?
+				else if(IR[15:12] == 4'b0000) nextState = NOOP;
+				else nextState = Fetch; //This is Reset?
 			end
 			NOOP: begin
 				nextState = Fetch;

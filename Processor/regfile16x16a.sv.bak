@@ -25,10 +25,9 @@ module regfile16x16a (clk, write, wrAddr, wrData, rdAddrA,
 	always_ff @(posedge clk) begin
 		if(write == 1) begin
 			regfile[wrAddr] <= wrData;
-		end 
-		//else begin
-			//regfile[wrAddr] <= regfile[wrAddr]; //Note: May cause quartus error.
-		//end
+		end else begin
+			regfile[wrAddr] <= regfile[wrAddr]; //Note: May cause quartus error.
+		end
 	end
 
 endmodule

@@ -12,8 +12,26 @@ module ControlUnit(Clk, Reset, ALU_s0, D_Addr, D_Wr, IR_Out, nextState, outState
 		wire [15:0] q;
 		wire PCClr, PCUp, IRLd;
 
-		InstructionMemory ROM(.address(PC_Out), .clock(Clk), .q(q));
+		InstMemory ROM(.address(PC_Out), .clock(Clk), .q(q));
 		IR instrucReg(.Clk(Clk), .inData(q), .outData(IR_Out), .Id(IRLd));
+		/*
+		module FSM(IR, 
+				PC_clr, 
+				IR_Id, 
+				PC_up, 
+				D_addr,
+				D_wr, 
+				RF_s, 
+				RF_W_addr, 
+				RF_W_en, 
+				RF_Ra_addr, 
+				RF_Rb_addr, 
+				ALU_s0,
+				outputCurrentState,
+				outputNextState,
+				clk,
+				Reset);
+		 */
 		FSM controller(.IR(IR_Out),
 			        .PC_clr(PCClr),
 				.IR_Id(IRLd),
@@ -68,8 +86,9 @@ module ControlUnit_tb;
 			"Reset: %b | OUTPUT SIGNALS: ALU Sel: %b | D_Addr: %b | D_wr: %b | IR_Out: %b | nextState: %b | outState: %b | PC_Out: %b | RF_Ra_Addr: %b | RF_Rb_Addr: %b | RF_W_Addr: %b | RF_W_en: %b | RF_s: %b",
 			Reset, ALU_s0, D_Addr, D_Wr, IR_Out, nextState, outState, PC_Out, RF_Ra_Addr, 
 			RF_Rb_Addr, RF_W_Addr, RF_W_en, RF_s);
-		Reset = 1; #11; //Test reset, Initial already set here.
-		Reset = 0; #40; //2 clks to fetch, decode
+		Reset = 0;		//Test reset, Initial already set here.
+		#31 Reset = 1;
+		#40;//2 clks to fetch, decode
 		#20; //Add
 		assert(outState == 4'h7 && nextState == 4'h1 && ALU_s0 == 3'b001 && RF_s == 1'b0 && 
 				RF_W_en == 1'b1 && RF_W_Addr == 4'hC && RF_Ra_Addr == 4'hA && RF_Rb_Addr == 4'hB)
@@ -92,7 +111,7 @@ module ControlUnit_tb;
 		#60; //Fetch, decode, HALT
 		#60; //Attempt to store, but only recieve HALT for 3 clks
 		assert(outState == 4'h8 && nextState == 4'h8)
-		$display($time,,,,"HALF PASSED");
+		$display($time,,,,"HALT PASSED");
 		$display($time,,,,
 			"Reset: %b | OUTPUT SIGNALS: ALU Sel: %b | D_Addr: %b | D_wr: %b | IR_Out: %b | nextState: %b | outState: %b | PC_Out: %b | RF_Ra_Addr: %b | RF_Rb_Addr: %b | RF_W_Addr: %b | RF_W_en: %b | RF_s: %b",
 			Reset, ALU_s0, D_Addr, D_Wr, IR_Out, nextState, outState, PC_Out, RF_Ra_Addr, 
