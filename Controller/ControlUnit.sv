@@ -99,7 +99,7 @@ module ControlUnit_tb;
 		#60; //Fetch, decode, Load
 		assert(outState == 4'h4 && nextState == 4'h5 && RF_s == 1'b1)
 		$display($time,,,,"LOAD A PASSED");
-		#60; //Another cycle needed to finish LOAD
+		#20; //Another cycle needed to finish LOAD
 		assert(outState == 4'h5 && nextState == 4'h1 && RF_s == 1'b1 && RF_W_en == 1'b1)
 		$display($time,,,,"LOAD B PASSED");
 		#60; //Fetch, decode, Store
@@ -111,7 +111,7 @@ module ControlUnit_tb;
 		#60; //Fetch, decode, HALT
 		#60; //Attempt to store, but only recieve HALT for 3 clks
 		assert(outState == 4'h8 && nextState == 4'h8)
-		$display($time,,,,"HALF PASSED");
+		$display($time,,,,"HALT PASSED");
 		$display($time,,,,
 			"Reset: %b | OUTPUT SIGNALS: ALU Sel: %b | D_Addr: %b | D_wr: %b | IR_Out: %b | nextState: %b | outState: %b | PC_Out: %b | RF_Ra_Addr: %b | RF_Rb_Addr: %b | RF_W_Addr: %b | RF_W_en: %b | RF_s: %b",
 			Reset, ALU_s0, D_Addr, D_Wr, IR_Out, nextState, outState, PC_Out, RF_Ra_Addr, 

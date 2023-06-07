@@ -1,5 +1,6 @@
 module Mux_16w_8_to_1(in1, in2, in3, in4, in5, in6, in7, in8, s, out);
-	input [15:0] in1, in2, in3, in4, in5, in6, in7, in8, s;
+	input [15:0] in1, in2, in3, in4, in5, in6, in7, in8;
+	input [2:0] s;
 	output [15:0] out;
 	
 	always @(s, in1, in2, in3, in4 ,in5 ,in6 ,in7, in8) begin
@@ -11,7 +12,7 @@ module Mux_16w_8_to_1(in1, in2, in3, in4, in5, in6, in7, in8, s, out);
 			3'b100 : out = in5;
 			3'b101 : out = in6;
 			3'b110 : out = in7;
-			3'b111 : out = in8;
+			default : out = in8;
 		endcase
 	end
 endmodule

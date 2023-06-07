@@ -1,161 +1,131 @@
 m255
 K4
 z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
 13
 !s112 1.1
 !i10d 8192
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/ea-co/OneDrive/Documents/GitHub/TCES330_Project/Controller
+Z0 dC:/Users/Steven/Desktop/TCES330_Project/Controller
 vControlUnit
-<<<<<<< HEAD
-Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-Z2 !s110 1686101351
-=======
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1686030940
->>>>>>> parent of b6fab47 (Added SDC file for top-level project file.)
+Z2 !s110 1686102358
 !i10b 1
-!s100 [NUZGVlL_AWcEGbBo_gD?3
-I=f9?aTKmP6JCYR7XHOe>z2
-Z3 VDg1SIo80bB@j0V0VzS_@n1
-Z4 !s105 ControlUnit_sv_unit
+!s100 Bl314WEBcBmaLJHK5UJ^S3
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+ICQK8W[lP_2oaCS514M@Am2
+Z4 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
-<<<<<<< HEAD
-Z5 w1686101008
-=======
-Z5 w1686030845
->>>>>>> parent of b6fab47 (Added SDC file for top-level project file.)
+Z5 w1686099647
 Z6 8./ControlUnit.sv
 Z7 F./ControlUnit.sv
-L0 1
-Z8 OV;L;10.5b;63
+!i122 4
+L0 1 53
+Z8 OV;L;2020.1;71
 r1
 !s85 0
 31
-<<<<<<< HEAD
-Z9 !s108 1686101351.000000
-Z10 !s107 ./ControlUnit.sv|
-Z11 !s90 -reportprogress|300|-work|work|+acc|./ControlUnit.sv|
-=======
-Z9 !s108 1686030939.000000
+Z9 !s108 1686102358.000000
 !s107 ./ControlUnit.sv|
 Z10 !s90 -reportprogress|300|-work|work|+acc|./ControlUnit.sv|
->>>>>>> parent of b6fab47 (Added SDC file for top-level project file.)
 !i113 1
-Z12 o-work work +acc
-Z13 tCvgOpt 0
+Z11 o-work work +acc
+Z12 tCvgOpt 0
 n@control@unit
 vControlUnit_tb
 R1
 R2
 !i10b 1
-!s100 S_0d1OjeV7GI2LeE=Q4^82
-Izl5o=aJkfha2eo69SfLD[1
+!s100 `EGk;``CNN@n3FFkbAcUB0
 R3
+I@im0OZQ9@zEi0=aZaZaI53
 R4
 S1
 R0
 R5
 R6
 R7
-L0 56
+!i122 4
+L0 56 68
 R8
 r1
 !s85 0
 31
 R9
+Z13 !s107 ./ControlUnit.sv|
 R10
-R11
 !i113 1
+R11
 R12
-R13
 n@control@unit_tb
 vFSM
 R1
-<<<<<<< HEAD
 R2
-=======
-Z14 !s110 1686030939
->>>>>>> parent of b6fab47 (Added SDC file for top-level project file.)
 !i10b 1
-!s100 bcWPW7edc?Fka14J]Y:?U1
-I7N[nU^iJ_dLTGzg<i5RUA1
+!s100 SWig8`B?Bf:S9_:;OcTSD3
 R3
-Z14 !s105 FSM_sv_unit
+I_O9BUfCQS1LP0:Mm0PFS60
+R4
 S1
 R0
-<<<<<<< HEAD
-R5
+Z14 w1686031071
 Z15 8./FSM.sv
 Z16 F./FSM.sv
-L0 1
-=======
-Z15 w1686030921
-Z16 8./FSM.sv
-Z17 F./FSM.sv
 !i122 2
 L0 1 116
->>>>>>> parent of b6fab47 (Added SDC file for top-level project file.)
 R8
 r1
 !s85 0
 31
 R9
-<<<<<<< HEAD
 Z17 !s107 ./FSM.sv|
 Z18 !s90 -reportprogress|300|-work|work|+acc|./FSM.sv|
-=======
-Z18 !s107 ./FSM.sv|
-Z19 !s90 -reportprogress|300|-work|work|+acc|./FSM.sv|
->>>>>>> parent of b6fab47 (Added SDC file for top-level project file.)
 !i113 1
+R11
 R12
-R13
 n@f@s@m
 vFSM_tb
 R1
 R2
 !i10b 1
-!s100 one@a=l_@[EaOhLzP3Vig3
-I<]2@3=>@^;P84?;Le]B>Q1
+!s100 7fD0L9C5bflUWNGA5=hP`1
 R3
-R14
+IlZUP=>czB3FTSm0iJ7jX=0
+R4
 S1
 R0
-R5
+R14
 R15
 R16
-L0 120
+!i122 2
+L0 120 144
 R8
 r1
 !s85 0
 31
 R9
-<<<<<<< HEAD
 R17
 R18
-=======
-R18
-R19
->>>>>>> parent of b6fab47 (Added SDC file for top-level project file.)
 !i113 1
+R11
 R12
-R13
 n@f@s@m_tb
 vInstructionMemory
 R2
 !i10b 1
-!s100 25gUffA0_PD]f8iJQk7N[2
-I2IUA=UlPO;OL10[S0:IFN1
+!s100 >>G4LIS1<NJ4c7Re_XEnR1
 R3
+I`Jjf_e1L=@GS=gizb]Qk<0
+R4
 R0
-w1685483632
+w1685674702
 8./InstructionMemory.v
 F./InstructionMemory.v
-L0 40
+!i122 0
+L0 40 61
 R8
 r1
 !s85 0
@@ -164,141 +134,110 @@ R9
 !s107 ./InstructionMemory.v|
 !s90 -reportprogress|300|-work|work|+acc|./InstructionMemory.v|
 !i113 1
+R11
 R12
-R13
 n@instruction@memory
 vIR
 R1
 R2
 !i10b 1
-!s100 40F;Y7GSTf;Oz[:k:8V3b0
-IIM3jgjGWS0]1DL>;IKG^l2
+!s100 5?@9`6ITg3No2Wb45`7aj0
 R3
-Z19 !s105 IR_sv_unit
+IgGF<O6VaVM`HJ_iH0JC293
+R4
 S1
 R0
-<<<<<<< HEAD
-Z20 w1685829427
-Z21 8./IR.sv
-Z22 F./IR.sv
-L0 9
-=======
-Z20 w1685741747
-Z21 8./IR.sv
-Z22 F./IR.sv
+Z19 w1685741747
+Z20 8./IR.sv
+Z21 F./IR.sv
 !i122 1
 L0 9 13
->>>>>>> parent of b6fab47 (Added SDC file for top-level project file.)
 R8
 r1
 !s85 0
 31
 R9
-Z23 !s107 ./IR.sv|
-Z24 !s90 -reportprogress|300|-work|work|+acc|./IR.sv|
+Z22 !s107 ./IR.sv|
+Z23 !s90 -reportprogress|300|-work|work|+acc|./IR.sv|
 !i113 1
+R11
 R12
-R13
 n@i@r
 vIR_tb
 R1
 R2
 !i10b 1
-!s100 4oI@G2OX;XL>LAX7gee2?0
-I;MTJD0bNR6@?<MIaH59Ul0
+!s100 m>2OHbEZOBlehoT1<0f:M0
 R3
-R19
+IeXF2dj2hNT9dmV=:Ye<if2
+R4
 S1
 R0
+R19
 R20
 R21
-R22
-<<<<<<< HEAD
-L0 23
-=======
 !i122 1
 L0 23 33
->>>>>>> parent of b6fab47 (Added SDC file for top-level project file.)
 R8
 r1
 !s85 0
 31
 R9
+R22
 R23
-R24
 !i113 1
+R11
 R12
-R13
 n@i@r_tb
 vPC
 R1
-R14
+R2
 !i10b 1
-!s100 o76Kf_j6zAPMhKVZ6kDGa1
-IU40^DS6g[4BgOKm>e9cTo3
+!s100 bWcfoCA<FzbQAm_?:?A:H3
 R3
-Z25 !s105 PC_sv_unit
+I6U8n5k6Q2zLAI[PYZldeG1
+R4
 S1
 R0
-<<<<<<< HEAD
-Z26 w1685829393
-Z27 8./PC.sv
-Z28 F./PC.sv
-L0 8
-=======
-Z25 w1685741742
-Z26 8./PC.sv
-Z27 F./PC.sv
+Z24 w1686081269
+Z25 8./PC.sv
+Z26 F./PC.sv
 !i122 3
 L0 8 14
->>>>>>> parent of b6fab47 (Added SDC file for top-level project file.)
 R8
 r1
 !s85 0
 31
 R9
-<<<<<<< HEAD
-Z29 !s107 ./PC.sv|
-Z30 !s90 -reportprogress|300|-work|work|+acc|./PC.sv|
-=======
-Z28 !s107 ./PC.sv|
-Z29 !s90 -reportprogress|300|-work|work|+acc|./PC.sv|
->>>>>>> parent of b6fab47 (Added SDC file for top-level project file.)
+Z27 !s107 ./PC.sv|
+Z28 !s90 -reportprogress|300|-work|work|+acc|./PC.sv|
 !i113 1
+R11
 R12
-R13
 n@p@c
 vPC_tb
 R1
-R14
+R2
 !i10b 1
-!s100 L3Oke_]D[AV8MG;NdnMD70
-IgzUKDB7H6oWdVz6G8khZ:3
+!s100 zIghCh`@ha6mT7MDZ?XZm1
 R3
-R25
+I>Odb97h7Z`mC03SLz6NfB0
+R4
 S1
 R0
+R24
 R25
 R26
-R27
-<<<<<<< HEAD
-R28
-L0 24
-=======
 !i122 3
 L0 24 27
->>>>>>> parent of b6fab47 (Added SDC file for top-level project file.)
 R8
 r1
 !s85 0
 31
 R9
-<<<<<<< HEAD
-=======
+R27
 R28
->>>>>>> parent of b6fab47 (Added SDC file for top-level project file.)
-R29
 !i113 1
+R11
 R12
-R13
 n@p@c_tb
