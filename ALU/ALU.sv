@@ -16,7 +16,7 @@ module ALU(SelectFunc, A, B, Q);
 	//Mux_3w_8_to_1 unit(Q, Sel, 3'b000, A + B, A - B, A, A ^ B, A | B, A & B, A + 3'b001);
 	always @(SelectFunc, A, B) begin
 		case(SelectFunc)
-			3'b000: Q = 3'b000; 	//0
+			3'b000: Q = 3'b000; //0
 			3'b001: Q = A + B; 	//ADD
 			3'b010: Q = A - B;	//SUBTRACT
 			3'b011: Q = A;		//BYPASS

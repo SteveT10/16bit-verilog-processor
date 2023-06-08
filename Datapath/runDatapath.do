@@ -13,10 +13,12 @@ vmap work rtl_work
 # Compile Verilog
 #     All Verilog files that are part of this design should have
 #     their own "vlog" line below.
+# Please note that folder structure must be preserved,
+# else we must enter their new location below.
 vlog -work work +acc "./Datapath.sv"
-vlog -work work +acc "./Mux_16w_2to1.sv"
-vlog -work work +acc "./regfile16x16a.sv"
-vlog -work work +acc "./ALU.sv"
+vlog -work work +acc "../Mux/Mux_16w_2to1.sv"
+vlog -work work +acc "../RegisterFile/regfile16x16a.sv"
+vlog -work work +acc "../ALU/ALU.sv"
 vlog -work work +acc "./DataMemory.v"
 
 # Call vsim to invoke simulator

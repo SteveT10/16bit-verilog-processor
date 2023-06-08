@@ -12,7 +12,7 @@ module PC(Clk, Clr, Up, Addr);
 	output logic [6:0] Addr; //Next address to do.
 
 	always_ff @(posedge Clk) begin //Inferred latch is fine in always_ff
-		if(!Clr) Addr <= 7'd0; //Clr is on
+		if(Clr) Addr <= 7'd0; //Clr is on
 		else if(Up) Addr <= Addr + 1'b1; //Increment
 		// else Addr <= Addr; //if(!Up), NOTE TO SELF: may cause quartus errors. 
 		//also once we reach max instructions, just repeat the last one.
@@ -36,8 +36,8 @@ module PC_tb();
 	end
 	
 	initial begin
-		Clr = 0; Up = 1; #20;
-		Clr = 1; 	 
+		Clr = 1; Up = 1; #20;
+		Clr = 0; 	 	 
 		for(int k = 0; k < 127; k++) begin
 			#10;
 			assert(addr == k); //Throws error if something is wrong.

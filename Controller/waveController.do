@@ -1,20 +1,20 @@
 onerror {resume}
 quietly WaveActivateNextPane {} 0
-add wave -noupdate /ControlUnit_tb/Clk
-add wave -noupdate /ControlUnit_tb/Reset
-add wave -noupdate /ControlUnit_tb/DUT.q
-add wave -noupdate /ControlUnit_tb/D_Wr
-add wave -noupdate /ControlUnit_tb/RF_W_en
-add wave -noupdate /ControlUnit_tb/RF_s
-add wave -noupdate /ControlUnit_tb/IR_Out
-add wave -noupdate /ControlUnit_tb/D_Addr
-add wave -noupdate /ControlUnit_tb/PC_Out
-add wave -noupdate /ControlUnit_tb/nextState
-add wave -noupdate /ControlUnit_tb/outState
-add wave -noupdate /ControlUnit_tb/RF_Ra_Addr
-add wave -noupdate /ControlUnit_tb/RF_Rb_Addr
-add wave -noupdate /ControlUnit_tb/RF_W_Addr
-add wave -noupdate /ControlUnit_tb/ALU_s0
+add wave -noupdate /Controller_tb/Clk
+add wave -noupdate /Controller_tb/Reset
+add wave -noupdate /Controller_tb/DUT.q
+add wave -noupdate /Controller_tb/D_Wr
+add wave -noupdate /Controller_tb/RF_W_en
+add wave -noupdate /Controller_tb/RF_s
+add wave -noupdate /Controller_tb/IR_Out
+add wave -noupdate /Controller_tb/D_Addr
+add wave -noupdate /Controller_tb/PC_Out
+add wave -noupdate /Controller_tb/nextState
+add wave -noupdate /Controller_tb/outState
+add wave -noupdate /Controller_tb/RF_Ra_Addr
+add wave -noupdate /Controller_tb/RF_Rb_Addr
+add wave -noupdate /Controller_tb/RF_W_Addr
+add wave -noupdate /Controller_tb/ALU_s0
 TreeUpdate [SetDefaultTree]
 WaveRestoreCursors {{Cursor 1} {0 ps} 0}
 quietly wave cursor active 0

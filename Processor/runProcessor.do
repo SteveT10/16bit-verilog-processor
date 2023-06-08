@@ -13,15 +13,17 @@ vmap work rtl_work
 # Compile Verilog
 #     All Verilog files that are part of this design should have
 #     their own "vlog" line below.
+# Please note that folder structure must be preserved,
+# else we must enter their new location below.
 vlog -work work +acc "./InstMemory.v"
-vlog -work work +acc "./IR.sv"
-vlog -work work +acc "./FSM.sv"
-vlog -work work +acc "./PC.sv"
-vlog -work work +acc "./ControlUnit.sv"
-vlog -work work +acc "./Datapath.sv"
-vlog -work work +acc "./Mux_16w_2to1.sv"
-vlog -work work +acc "./regfile16x16a.sv"
-vlog -work work +acc "./ALU.sv"
+vlog -work work +acc "../Instruction_Register/IR.sv"
+vlog -work work +acc "../FSM/FSM.sv"
+vlog -work work +acc "../Program_Counter/PC.sv"
+vlog -work work +acc "../Controller/Controller.sv"
+vlog -work work +acc "../Datapath/Datapath.sv"
+vlog -work work +acc "../Mux/Mux_16w_2to1.sv"
+vlog -work work +acc "../RegisterFile/regfile16x16a.sv"
+vlog -work work +acc "../ALU/ALU.sv"
 vlog -work work +acc "./DataMemory.v"
 vlog -work work +acc "./Processor.sv"
 vlog -work work +acc "./testProcessor.sv"
@@ -35,7 +37,7 @@ vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lns
 # Source the wave do file
 #     This should be the file that sets up the signal window for
 #     the module you are testing.
-do wave.do
+do waveProcessor.do
 
 # Set the window types
 view wave

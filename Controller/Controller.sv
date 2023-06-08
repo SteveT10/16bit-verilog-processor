@@ -1,4 +1,4 @@
-module ControlUnit(Clk, Reset, ALU_s0, D_Addr, D_Wr, IR_Out, nextState, outState, 	
+module Controller(Clk, Reset, ALU_s0, D_Addr, D_Wr, IR_Out, nextState, outState, 	
 		   PC_Out, RF_Ra_Addr, RF_Rb_Addr, RF_W_Addr, RF_W_en, RF_s);
 
 		input Clk, Reset;
@@ -32,7 +32,7 @@ module ControlUnit(Clk, Reset, ALU_s0, D_Addr, D_Wr, IR_Out, nextState, outState
 				clk,
 				Reset);
 		 */
-		FSM controller(.IR(IR_Out),
+		FSM stateMachine(.IR(IR_Out),
 			        .PC_clr(PCClr),
 				.IR_Id(IRLd),
 				.PC_up(PCUp),
@@ -53,7 +53,7 @@ module ControlUnit(Clk, Reset, ALU_s0, D_Addr, D_Wr, IR_Out, nextState, outState
 endmodule
 
 `timescale 1ns/1ns
-module ControlUnit_tb;
+module Controller_tb;
 	logic Clk, Reset;
 	wire D_Wr, RF_W_en, RF_s;
 	wire [15:0] IR_Out;
@@ -62,7 +62,7 @@ module ControlUnit_tb;
 	wire [3:0] nextState, outState, RF_Ra_Addr, RF_Rb_Addr, RF_W_Addr;
 	wire [2:0] ALU_s0;
 
-	ControlUnit DUT(.Clk(Clk), .Reset(Reset), .ALU_s0(ALU_s0), .D_Addr(D_Addr), .D_Wr(D_Wr), .IR_Out(IR_Out), 
+	Controller DUT(.Clk(Clk), .Reset(Reset), .ALU_s0(ALU_s0), .D_Addr(D_Addr), .D_Wr(D_Wr), .IR_Out(IR_Out), 
 			.nextState(nextState), .outState(outState), .PC_Out(PC_Out), .RF_Ra_Addr(RF_Ra_Addr), 
 			.RF_Rb_Addr(RF_Rb_Addr), .RF_W_Addr(RF_W_Addr), .RF_W_en(RF_W_en), .RF_s(RF_s));
 	always begin
