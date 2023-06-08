@@ -1,0 +1,9 @@
+#Auto-generated simulation files.
+**/rtl_work
+**.wlf
+**/.bak
+**/modelsim.ini
+**/vish_stacktrack.vstf
+
+#Need a better way to merge transcripts
+**/transcript
