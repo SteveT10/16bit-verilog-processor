@@ -4,6 +4,11 @@
 **/.bak
 **/modelsim.ini
 **/vish_stacktrack.vstf
+**.ver
+**.bsf
 
 #Need a better way to merge transcripts
 **/transcript
+
+#Do NOT ignore .qip, needed to run LPM modules.
+
