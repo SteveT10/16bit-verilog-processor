@@ -31,8 +31,7 @@
 **/db/*.sta_cmp.7_slow_1200mv_85c.tdb
 **/db/*.logdb
 **/db/ip/slde1ef6cd0/alt_sld_fab__report.html
-**/db/ip/slde1ef6cd0/alt_sld_fab__report.html
-#Project\db\ip\slde1ef6cd0
+**/db/ip/slde1ef6cd0/alt_sld_fab__report.xml
 
 **.hif
 **.db_info
