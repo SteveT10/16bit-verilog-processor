@@ -20,8 +20,6 @@
 **.qmsg
 **.idb
 **/simulation
-**/greybox_tmp/!cbx_args.txt
-**/db/*.xml
 **/db/*.html
 **/db/*.nvd
 **/db/*.hsd
@@ -29,6 +27,12 @@
 **/db/*.txt
 **/db/*.ammdb
 **/db/*.sci
+**/db/*.tmw_info
+**/db/*.sta_cmp.7_slow_1200mv_85c.tdb
+**/db/*.logdb
+**/db/ip/slde1ef6cd0/alt_sld_fab__report.html
+**/db/ip/slde1ef6cd0/alt_sld_fab__report.html
+#Project\db\ip\slde1ef6cd0
 
 **.hif
 **.db_info
