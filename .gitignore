@@ -8,9 +8,12 @@
 **.ver
 **.bsf
 **.qws
+**/incremental_db/
 
-#Need a better way to merge transcripts
+#Need a better way to merge these
 **/transcript
+**/output_files/
 
 #Do NOT ignore .qip, needed to run LPM modules.
+#greybox_tmp/, cnx, qip, qpf, qsf needed for quartus projects
 
