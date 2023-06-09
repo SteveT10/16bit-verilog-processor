@@ -8,7 +8,21 @@
 **.ver
 **.bsf
 **.qws
-**/incremental_db/
+
+
+#Compiled quartus files.
+**/incremental_db/ 
+**.hdb
+**.cdb
+**.rdb
+**.kpt
+**.qmsg
+**/db/!Project.db_info
+**/db/!.flock
+**.hif
+**.db_info
+**.bpm
+**.sci
 
 #Need a better way to merge these
 **/transcript
