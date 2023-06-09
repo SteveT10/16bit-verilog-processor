@@ -37,7 +37,7 @@ module PC_tb();
 	
 	initial begin
 		Clr = 1; Up = 1; #20;
-		Clr = 0; 	 
+		Clr = 0; 	 	 
 		for(int k = 0; k < 127; k++) begin
 			#10;
 			assert(addr == k); //Throws error if something is wrong.

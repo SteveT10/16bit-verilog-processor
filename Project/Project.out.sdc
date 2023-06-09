@@ -20,7 +20,7 @@
 ## PROGRAM "Quartus Prime"
 ## VERSION "Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition"
 
-## DATE    "Tue Jun 06 15:19:44 2023"
+## DATE    "Thu Jun 08 23:30:21 2023"
 
 ##
 ## DEVICE  "EP4CE115F29C7"
@@ -41,6 +41,7 @@ set_time_format -unit ns -decimal_places 3
 
 create_clock -name {processorClock} -period 500.000 -waveform { 0.000 250.000 } [get_nets {Filter|Out}]
 create_clock -name {MHz50Clock} -period 20.000 -waveform { 0.000 10.000 } [get_ports {CLOCK_50}]
+create_clock -name {altera_reserved_tck} -period 100.000 -waveform { 0.000 50.000 } [get_ports {altera_reserved_tck}]
 
 
 #**************************************************************
@@ -59,6 +60,10 @@ create_clock -name {MHz50Clock} -period 20.000 -waveform { 0.000 10.000 } [get_p
 # Set Clock Uncertainty
 #**************************************************************
 
+set_clock_uncertainty -rise_from [get_clocks {altera_reserved_tck}] -rise_to [get_clocks {altera_reserved_tck}]  1.000  
+set_clock_uncertainty -rise_from [get_clocks {altera_reserved_tck}] -fall_to [get_clocks {altera_reserved_tck}]  1.000  
+set_clock_uncertainty -fall_from [get_clocks {altera_reserved_tck}] -rise_to [get_clocks {altera_reserved_tck}]  1.000  
+set_clock_uncertainty -fall_from [get_clocks {altera_reserved_tck}] -fall_to [get_clocks {altera_reserved_tck}]  1.000  
 set_clock_uncertainty -rise_from [get_clocks {MHz50Clock}] -rise_to [get_clocks {MHz50Clock}]  1.000  
 set_clock_uncertainty -rise_from [get_clocks {MHz50Clock}] -fall_to [get_clocks {MHz50Clock}]  1.000  
 set_clock_uncertainty -fall_from [get_clocks {MHz50Clock}] -rise_to [get_clocks {MHz50Clock}]  1.000  

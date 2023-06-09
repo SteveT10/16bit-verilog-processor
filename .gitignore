@@ -1,0 +1,47 @@
+#Auto-generated simulation files.
+**/rtl_work
+**/work
+**.wlf
+**.bak
+**/modelsim.ini
+**/vish_stacktrack.vstf
+**.ver
+**.bsf
+**.qws
+
+
+#Compiled quartus files.
+**/incremental_db/ 
+**.hdb
+**.cdb
+**.rdb
+**.kpt
+**.ddb
+**.qmsg
+**.idb
+**/simulation
+**/db/*.html
+**/db/*.nvd
+**/db/*.hsd
+**/db/*.sld_design_entry.sci
+**/db/*.txt
+**/db/*.ammdb
+**/db/*.sci
+**/db/*.tmw_info
+**/db/*.sta_cmp.7_slow_1200mv_85c.tdb
+**/db/*.logdb
+**/db/ip/slde1ef6cd0/alt_sld_fab__report.html
+**/db/ip/slde1ef6cd0/alt_sld_fab__report.xml
+
+**.hif
+**.db_info
+**.bpm
+**.sci
+
+#Need a better way to merge these
+**/transcript
+**/output_files/
+
+#Do NOT ignore .qip, needed to run LPM modules.
+#greybox_tmp/, cnx, qip, qpf, qsf needed for quartus projects
+

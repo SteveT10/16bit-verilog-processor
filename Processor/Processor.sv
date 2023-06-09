@@ -8,9 +8,9 @@ module Processor(Clk, Reset, IR_Out, PC_Out, State, NextState, ALU_A, ALU_B, ALU
 	logic D_Wr, RF_W_en, RF_s;
 	logic [3:0] RF_Ra_Addr, RF_Rb_Addr, RF_W_Addr;
 
-	/*ControlUnit(Clk, Reset, ALU_s0, D_Addr, D_Wr, IR_Out, nextState, outState, 	
+	/*Controller(Clk, Reset, ALU_s0, D_Addr, D_Wr, IR_Out, nextState, outState, 	
 		   PC_Out, RF_Ra_Addr, RF_Rb_Addr, RF_W_Addr, RF_W_en, RF_s);*/
-	ControlUnit controller(.Clk(Clk), .Reset(Reset), .ALU_s0(ALU_s0), 
+	Controller controller(.Clk(Clk), .Reset(Reset), .ALU_s0(ALU_s0), 
 							.D_Addr(D_Addr), .D_Wr(D_Wr), .IR_Out(IR_Out), 
 							.nextState(NextState), .outState(State), .PC_Out(PC_Out),
 							.RF_Ra_Addr(RF_Ra_Addr), .RF_Rb_Addr(RF_Rb_Addr), 
