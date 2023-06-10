@@ -8,7 +8,6 @@ The processor was designed through hierarchical design, each component was indiv
 
 ![processor design consists of many smaller modules](media_used/processorDesign.png)
 
-
 ## Implementation
 
 ![Components of Processor](media_used/processorModules.png)
@@ -46,7 +45,7 @@ The processor was designed through hierarchical design, each component was indiv
 |HALT         |0101                    |xxxx          |xxxx         |xxxx         |
 
 ### To run simulations
-    ModelSim Testbenches can be run through executing the corresponding run{Component}.do files in each module directory. The project folder can be compiled on Quartus and then flashed onto an Altera DE2-115 board to test the processor.
+ModelSim Testbenches can be run through executing the corresponding run{Component}.do files in each module directory. The project folder can be compiled on Quartus and then flashed onto an Altera DE2-115 board to test the processor.
 
 ### Specifications
 - 128 x 16 Instruction Memory or ‘ROM’.
