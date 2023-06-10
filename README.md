@@ -44,7 +44,7 @@ The processor was designed through hierarchical design, each component was indiv
 |SUB          |0100                    |Ra            |Rb           |Rd           |
 |HALT         |0101                    |xxxx          |xxxx         |xxxx         |
 
-### To run simulations
+### Running Simulations
 ModelSim Testbenches can be run through executing the corresponding run{Component}.do files in each module directory. The project folder can be compiled on Quartus and then flashed onto an Altera DE2-115 board to test the processor.
 
 ### Specifications
