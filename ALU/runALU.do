@@ -4,11 +4,16 @@ vlib work
 # Compile Verilog
 #     All Verilog files that are part of this design should have
 #     their own "vlog" line below.
+#     This compiles source code and SV extensions
+#     into a specifiede working library
 vlog "./ALU.sv"
 
 # Call vsim to invoke simulator
 #     Make sure the last item on the line is the name of the
 #     testbench module you want to execute.
+#   -vopt is a tool
+#   -t is specifies the simulator time resolution, fs, ps, ns, us, ms, sec allowed.
+#   -lib <folder> specifies the working library in which vsim will look for design units
 vsim -voptargs="+acc" -t 1ps -lib work ALU_tb
 
 # Source the wave do file

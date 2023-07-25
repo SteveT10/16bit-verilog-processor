@@ -4,7 +4,7 @@
 This is a simple 16-bit programmable processor project from our Digital Systems Design class. The processor’s architecture is based on Harvard Architecture where there are separate storages for instructions and data. This project demonstrates our skills and knowledge we gained in our computer engineering program so far, this includes SystemVerilog, RTL Design, Computer Architecture, Digital Circuit Testing, and more. 
 
 ## Design
-The processor was designed through hierarchical design, each component was individually designed then tested and verified using ModelSim testbenches before assembling them into upper level processor modules. 
+The Processor consists of a Control Unit and Datapath Unit. The Control Unit contains the processor's 16-bit instructions and handles it processing. The Datapath Unit receives control signals from the Control Unit to transfer and operate on 16-bit data. The processor was designed through hierarchical design, each component was individually designed then tested and verified using ModelSim testbenches before assembling them into upper level processor modules. 
 
 ![processor design consists of many smaller modules](media_used/processorDesign.png)
 
